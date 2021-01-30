@@ -1,0 +1,2283 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2021.01.29 00:11:57 =~=~=~=~=~=~=~=~=~=~=~=
+QFP IC
+Xtal:1
+DDR3 init.
+DRAMC init done. 
+Calculate size.
+DRAM size=512MB
+Set new TRFC.
+ddr-900
+
+7528DRAMC V1.6 (0)
+Press 'x' or 'b' key in 1 secs to enter or skip bootloader upgrade.
+
+
+EN7528 at Mon Sep 2 14:09:30 IST 2019 version 1.1 free bootbase
+
+Set SPI Clock to 40 Mhz
+spi_nand_probe: mfr_id=0x2c, dev_id=0x24
+Using Flash ECC.
+Detected SPI NAND Flash : _SPI_NAND_DEVICE_ID_MT29F2G01, Flash Size=0x10000000
+bmt pool size: 163 
+BMT & BBT Init Success 
+
+  GE Rext AnaCal Done! (5)(0x1b)  
+Press any key in 1 secs to enter boot command mode.
+..........
+
+
+==> boot flag = 1
+Decompress to 80002000 free_mem_ptr=80E00000 free_mem_ptr_end=807B0000
+from slave
+Uncompressing [LZMA] ...  done.
+Initializing cgroup subsys cpuset
+Initializing cgroup subsys cpu
+Initializing cgroup subsys cpuacct
+Linux version 3.18.21 (root@tn795) (gcc version 4.6.3 (Buildroot 2015.08.1) ) #6 SMP Mon Nov 2 06:45:21 IST 2020
+__l2cmem:0x807c1d60, _l2cmem_end:0x807c1d60, l2cmem_size:0 Bytes
+memsize:432MB
+EcoNet EN7528 SOC prom init
+bootconsole [early0] enabled
+CPU0 revision is: 0001992f (MIPS 1004Kc)
+Determined physical RAM map:
+ memory: 1affe000 @ 00002000 (usable)
+Wasting 64 bytes for tracking 2 unused pages
+MIPS: machine is econet,en751221
+Zone ranges:
+  Normal   [mem 0x00002000-0x1affffff]
+Movable zone start for each node
+Early memory node ranges
+  node   0: [mem 0x00002000-0x1affffff]
+Initmem setup node 0 [mem 0x00002000-0x1affffff]
+Detected 3 available secondary CPU(s)
+Primary instruction cache 32kB, VIPT, 4-way, linesize 32 bytes.
+Primary data cache 32kB, 4-way, PIPT, no aliases, linesize 32 bytes
+MIPS secondary cache 256kB, 8-way, linesize 32 bytes.
+PERCPU: Embedded 9 pages/cpu @81365000 s5952 r8192 d22720 u36864
+Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 109726
+Kernel command line: 
+log_buf_len individual max cpu contribution: 4096 bytes
+log_buf_len total cpu_extra contributions: 12288 bytes
+log_buf_len min size: 16384 bytes
+log_buf_len: 32768 bytes
+early log buf free: 14176(86%)
+PID hash table entries: 2048 (order: 1, 8192 bytes)
+Dentry cache hash table entries: 65536 (order: 6, 262144 bytes)
+Inode-cache hash table entries: 32768 (order: 5, 131072 bytes)
+Writing ErrCtl register=000000ba
+Readback ErrCtl register=000000ba
+nmi base is 813fc200
+Memory: 426352K/442360K available (7935K kernel code, 1318K rwdata, 1680K rodata, 248K init, 613K bss, 16008K reserved)
+SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+Hierarchical RCU implementation.
+NR_IRQS:64
+
+tc3162_time_init: Init bus timeout and watchdog
+set rbus timeout as NMI then enable it
+CPU frequency 900.00 MHz
+plat_time_init: Entered, mips_timer_ack ptr is [80007fc4]
+ Using 200.000 MHz high precision timer.
+r4k_clockevent_init: setup_irq OK, irq is [52]
+console [ttyS0] enabled
+console [ttyS0] enabled
+bootconsole [early0] disabled
+bootconsole [early0] disabled
+Calibrating delay loop... 591.87 BogoMIPS (lpj=2959360)
+pid_max: default: 32768 minimum: 301
+Security Framework initialized
+Mount-cache hash table entries: 1024 (order: 0, 4096 bytes)
+Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes)
+Initializing cgroup subsys devices
+Initializing cgroup subsys freezer
+Initializing cgroup subsys debug
+34K sync es set to 0.
+Config7: 0x80090500
+launch: starting cpu1
+launch: cpu1 gone!
+Primary instruction cache 32kB, VIPT, 4-way, linesize 32 bytes.
+Primary data cache 32kB, 4-way, PIPT, no aliases, linesize 32 bytes
+MIPS secondary cache 256kB, 8-way, linesize 32 bytes.
+CPU1 revision is: 0001992f (MIPS 1004Kc)
+Synchronize counters for CPU 1: done.
+launch: starting cpu2
+launch: cpu2 gone!
+Primary instruction cache 32kB, VIPT, 4-way, linesize 32 bytes.
+Primary data cache 32kB, 4-way, PIPT, no aliases, linesize 32 bytes
+MIPS secondary cache 256kB, 8-way, linesize 32 bytes.
+CPU2 revision is: 0001992f (MIPS 1004Kc)
+Synchronize counters for CPU 2: done.
+launch: starting cpu3
+launch: cpu3 gone!
+Primary instruction cache 32kB, VIPT, 4-way, linesize 32 bytes.
+Primary data cache 32kB, 4-way, PIPT, no aliases, linesize 32 bytes
+MIPS secondary cache 256kB, 8-way, linesize 32 bytes.
+CPU3 revision is: 0001992f (MIPS 1004Kc)
+Synchronize counters for CPU 3: done.
+Brought up 4 CPUs
+NET: Registered protocol family 16
+PCIe 7528 PHY init  
+PCIe driver version: 7528.1.20181122
+EN7528 pcie_init
+check pcie link up status: 
+isRC0_LINKUP=1 
+isRC1_LINKUP=1 
+registering PCI controller with io_map_base unset
+Initializing Ecnt Event Netlink Socket
+Initializing Econet Event Netlink Socket nl_sk = 9ad58400
+SCSI subsystem initialized
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+PCI host bridge to bus 0000:00
+pci_bus 0000:00: root bus resource [mem 0x20000000-0x2fffffff]
+pci_bus 0000:00: root bus resource [io  0x1f600000-0x1f61ffff]
+pci_bus 0000:00: No busn resource found for root bus, will use [bus 00-ff]
+pci 0000:00:00.0: bridge configuration invalid ([bus 00-00]), reconfiguring
+pci 0000:00:01.0: bridge configuration invalid ([bus 00-00]), reconfiguring
+pci 0000:00:00.0: BAR 8: assigned [mem 0x20000000-0x200fffff]
+pci 0000:00:01.0: BAR 8: assigned [mem 0x20100000-0x202fffff]
+pci 0000:01:00.0: BAR 0: assigned [mem 0x20000000-0x200fffff]
+pci 0000:00:00.0: PCI bridge to [bus 01]
+pci 0000:00:00.0:   bridge window [mem 0x20000000-0x200fffff]
+pci 0000:02:00.0: BAR 0: assigned [mem 0x20100000-0x201fffff 64bit pref]
+pci 0000:02:00.0: BAR 2: assigned [mem 0x20200000-0x20203fff 64bit pref]
+pci 0000:02:00.0: BAR 4: assigned [mem 0x20204000-0x20204fff 64bit pref]
+pci 0000:00:01.0: PCI bridge to [bus 02]
+pci 0000:00:01.0:   bridge window [mem 0x20100000-0x202fffff]
+NET: Registered protocol family 8
+NET: Registered protocol family 20
+Switched to clocksource MIPS
+NET: Registered protocol family 2
+TCP established hash table entries: 4096 (order: 2, 16384 bytes)
+TCP bind hash table entries: 4096 (order: 3, 32768 bytes)
+TCP: Hash tables configured (established 4096 bind 4096)
+TCP: reno registered
+UDP hash table entries: 256 (order: 1, 8192 bytes)
+UDP-Lite hash table entries: 256 (order: 1, 8192 bytes)
+NET: Registered protocol family 1
+
+ mt7512_pcie_fixup: 0x1438 = 20000014 
+ mt7512_pcie_rc0_retrain: 70 = 0047d811 80 = 01608c12
+ mt7512_pcie_fixup: 0x3438 = 20100015 
+ mt7512_pcie_rc1_retrain: 80 = 0147dc12 80 = 01608c12
+RC1 Link Traing Result: 10120008
+TC3162 hardware watchdog module loaded.
+futex hash table entries: 1024 (order: 4, 65536 bytes)
+squashfs: version 4.0 (2009/01/31) Phillip Lougher
+jffs2: version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+fuse init (API version 7.23)
+msgmni has been set to 832
+io scheduler noop registered (default)
+ttyS0 at I/O 0xbfbf0003 (irq = 5, base_baud = 7200) is a TC3162
+ECNT ring buffer init success
+brd: module loaded
+
+SPI Flash Init Start
+Found no SPI flash device
+IS_SPIFLASH=0x0, IS_NANDFLASH=0x1, (0xBFA10114)=0x6)
+Set SPI Clock to 50 Mhz
+spi_nand_probe: mfr_id=0x2c, dev_id=0x24
+Using Flash ECC.
+Detected SPI NAND Flash : _SPI_NAND_DEVICE_ID_MT29F2G01, Flash Size=0x10000000
+spi nand flash
+tc3162: flash device 0x01000000 at 0x1c000000
+EN7512 mtd init: spi nand probe enter
+[spi_nand_setup] : Enter 
+nand: device found, Manufacturer ID: 0x2c, Chip ID: 0x24
+nand: Micron _SPI_NAND_DEVICE_ID_MT29F2G01
+nand: 256MiB, SLC, page size: 2048, OOB size: 64
+nand_scan_ident ok
+[spi_nand_setup]: chip size =  0x10000000, erase_shift=0x11
+bmt pool size: 163 
+BMT & BBT Init Success 
+
+parsing <0[bootloader],0[romfile],40m[tclinux],40m[tclinux_slave],8m[opt0],8m[opt1],26m[ubifs],2m[config],90m[ubifs2]>
+partition 12: name <ubifs2>, offset ffffffff, size 5a00000, mask flags 0
+partition 11: name <config>, offset ffffffff, size 200000, mask flags 0
+partition 10: name <ubifs>, offset ffffffff, size 1a00000, mask flags 0
+partition 9: name <opt1>, offset ffffffff, size 800000, mask flags 0
+partition 8: name <opt0>, offset ffffffff, size 800000, mask flags 0
+partition 7: name <tclinux_slave>, offset ffffffff, size 2800000, mask flags 0
+partition 4: name <tclinux>, offset ffffffff, size 2800000, mask flags 0
+partition 1: name <romfile>, offset ffffffff, size fffffffe, mask flags 0
+partition 0: name <bootloader>, offset ffffffff, size fffffffe, mask flags 0
+Creating 14 MTD partitions on "EN7512-SPI_NAND":
+0x000000000000-0x000000040000 : "bootloader"
+0x000000040000-0x000000080000 : "romfile"
+0x000000080000-0x00000047d688 : "kernel"
+mtd: partition "kernel" doesn't end on an erase block -- force read-only
+0x00000047d688-0x00000237d688 : "rootfs"
+mtd: partition "rootfs" doesn't start on an erase block boundary -- force read-only
+0x000000080000-0x000002880000 : "tclinux"
+0x000002880000-0x000002c7f649 : "kernel_slave"
+mtd: partition "kernel_slave" doesn't end on an erase block -- force read-only
+0x000002c7f649-0x000004b1f649 : "rootfs_slave"
+mtd: partition "rootfs_slave" doesn't start on an erase block boundary -- force read-only
+0x000002880000-0x000005080000 : "tclinux_slave"
+0x000005080000-0x000005880000 : "opt0"
+0x000005880000-0x000006080000 : "opt1"
+0x000006080000-0x000007a80000 : "ubifs"
+0x000007a80000-0x000007c80000 : "config"
+0x000007c80000-0x00000d680000 : "ubifs2"
+0x00000ddc0000-0x00000e000000 : "reservearea"
+
+rootfs_slave
+PPP generic driver version 2.4.2
+PPP BSD Compression module registered
+PPP Deflate Compression module registered
+NET: Registered protocol family 24
+register rtpci
+PCI: Enabling device 0000:00:01.0 (0000 -> 0002)
+PCI: Enabling device 0000:02:00.0 (0000 -> 0002)
+
+
+=== pAd = c0181000, size = 7490112 ===
+
+<-- RTMPAllocAdapterBlock, Status=0
+pAd->PciHif.CSRBaseAddress =0xc0080000, csr_addr=0xc0080000!
+RTMPInitPCIeDevice():device_id=0x7663
+mt_pci_chip_cfg(): HWVer=0x8b10, FWVer=0x8a01, pAd->ChipID=0x7663
+mt7663_init()-->
+<--mt7663_init()
+<-- RTMPAllocTxRxRingMemory, Status=0
+get_wdev_by_idx: invalid idx(0)
+get_wdev_by_idx: invalid idx(0)
+get_wdev_by_idx: invalid idx(0)
+get_wdev_by_idx: invalid idx(0)
+get_wdev_by_idx: invalid idx(0)
+get_wdev_by_idx: invalid idx(0)
+get_wdev_by_idx: invalid idx(0)
+USB driver version: 7528.3.20190226
+7528 USB PHY config, enable port0 port1
+port 0 u2_slew_rate_cal_7528
+FM_OUT value = 138(0x0000008A)
+SR calibration value = 4
+port 1 u2_slew_rate_cal_7528
+FM_OUT value = 137(0x00000089)
+SR calibration value = 4
+xhci-hcd xhci-hcd.0: xHCI Host Controller
+xhci-hcd xhci-hcd.0: new USB bus registered, assigned bus number 1
+xhci-hcd xhci-hcd.0: irq 10, io mem 0x1fb90000
+hub 1-0:1.0: USB hub found
+hub 1-0:1.0: 2 ports detected
+xhci-hcd xhci-hcd.0: xHCI Host Controller
+xhci-hcd xhci-hcd.0: new USB bus registered, assigned bus number 2
+hub 2-0:1.0: USB hub found
+hub 2-0:1.0: 1 port detected
+hidraw: raw HID events driver (C) Jiri Kosina
+usbcore: registered new interface driver usbhid
+usbhid: USB HID core driver
+Netfilter messages via NETLINK v0.30.
+nf_conntrack version 0.5.0 (6661 buckets, 26644 max)
+ctnetlink v0.93: registering with nfnetlink.
+nf_conntrack_rtsp v0.7 loading
+nf_conntrack_rtcp v0.7 loading
+port #0: 8027
+nf_nat_rtsp v0.7 loading
+nf_tables: (c) 2007-2009 Patrick McHardy <kaber@trash.net>
+nf_tables_compat: (c) 2012 Pablo Neira Ayuso <pablo@netfilter.org>
+xt_time: kernel timezone is -0000
+ip_set: protocol 6
+IPv4 over IPsec tunneling driver
+ip_tables: (C) 2000-2006 Netfilter Core Team
+ipt_account 0.1.7 : Piotr Gasid³o <quaker@barbara.eu.org>, http://www.barbara.eu.org/~quaker/ipt_account/
+TCP: cubic registered
+Initializing XFRM netlink socket
+NET: Registered protocol family 10
+ip6_tables: (C) 2000-2006 Netfilter Core Team
+sit: IPv6 over IPv4 tunneling driver
+NET: Registered protocol family 17
+NET: Registered protocol family 15
+bridge: automatic filtering via arp/ip/ip6tables has been deprecated. Update your scripts to load br_netfilter if you need this.
+8021q: 802.1Q VLAN Support v1.8
+tc3162ser_startup 
+VFS: Mounted root (squashfs filesystem) readonly on device 31:6.
+Freeing unused kernel memory: 248K (80ad2000 - 80b10000)
+busybox init and set aff
+
+Booting [1mRIL[0m...
+
+chmod: /userfs/profile.cfg: Read-only file system
+Mount first persistant storage ......
+UBI: attaching mtd10 to ubi0
+UBI: scanning is finished
+UBI: attached mtd10 (name "ubifs", size 26 MiB) to ubi0
+UBI: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+UBI: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+UBI: VID header offset: 2048 (aligned 2048), data offset: 4096
+UBI: good PEBs: 208, bad PEBs: 0, corrupted PEBs: 0
+UBI: user volume: 1, internal volumes: 1, max. volumes count: 128
+UBI: max/mean erase counter: 3/1, WL threshold: 4096, image sequence number: 3066447649
+UBI: available PEBs: 0, total reserved PEBs: 208, PEBs reserved for bad PEB handling: 35
+UBI: background thread "ubi_bgt0d" started, PID 68
+UBI device number 0, total 208 LEBs (26411008 bytes, 25.2 MiB), available 0 LEBs (0 bytes), LEB size 126976 bytes (124.0 KiB)
+ubiformat: error!: please, first detach mtd10UBI error: ubi_attach_mtd_dev: mtd10 is already attached to ubi0
+ (/dev/mtd10) from ubi0
+ubiattach: error!: cannot attach mtd10
+           error 17 (File exists)
+ubimkvol: error!: UBI device does not have free logical eraseblocks
+UBIFS: background thread "ubifs_bgt0_0" started, PID 78
+UBIFS: recovery needed
+UBIFS: recovery completed
+UBIFS: mounted UBI device 0, volume 0, name "config_data"
+UBIFS: LEB size: 126976 bytes (124 KiB), min./max. I/O unit sizes: 2048 bytes/2048 bytes
+UBIFS: FS size: 20189184 bytes (19 MiB, 159 LEBs), journal size 1015809 bytes (0 MiB, 8 LEBs)
+UBIFS: reserved for root: 953584 bytes (931 KiB)
+UBIFS: media format: w4/r0 (latest is w4/r0), UUID 9930826B-9E7A-4791-AF77-DE0C8E738816, small LPT model
+Mount second persistant storage ......UBI: attaching mtd12 to ubi1
+
+UBI: scanning is finished
+UBI: attached mtd12 (name "ubifs2", size 90 MiB) to ubi1
+UBI: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+UBI: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+UBI: VID header offset: 2048 (aligned 2048), data offset: 4096
+UBI: good PEBs: 720, bad PEBs: 0, corrupted PEBs: 0
+UBI: user volume: 1, internal volumes: 1, max. volumes count: 128
+UBI: max/mean erase counter: 1/0, WL threshold: 4096, image sequence number: 1833203316
+UBI: available PEBs: 0, total reserved PEBs: 720, PEBs reserved for bad PEB handling: 35
+UBI: background thread "ubi_bgt1d" started, PID 80
+UBI device number 1, total 720 LEBs (91422720 bytes, 87.2 MiB), available 0 LEBs (0 bytes), LEB size 126976 bytes (124.0 KiB)
+UBIFS: background thread "ubifs_bgt1_0" started, PID 87
+UBIFS: recovery needed
+UBIFS: recovery completed
+UBIFS: mounted UBI device 1, volume 0, name "config_data2"
+UBIFS: LEB size: 126976 bytes (124 KiB), min./max. I/O unit sizes: 2048 bytes/2048 bytes
+UBIFS: FS size: 85073920 bytes (81 MiB, 670 LEBs), journal size 4317184 bytes (4 MiB, 34 LEBs)
+UBIFS: reserved for root: 4018251 bytes (3924 KiB)
+UBIFS: media format: w4/r0 (latest is w4/r0), UUID AE80CB6A-FFB2-474F-93D8-C42AC764F76D, small LPT model
+This is not first boot..nothing to do
+chmod: /userfs/profile.cfg: Read-only file system
+Ebtables v2.0 registered
+ponTime:OMCI Startup
+exFAT: Version 1.2.9
+insmod: can't insert '/pfrm2.0/lib/modules/3.18.21/kernel/net/ipv4/netfilter/ipt_REDIRECT.ko': No such file or directory
+attackprotector: module license 'Proprietary' taints kernel.
+Disabling lock debugging due to kernel taint
+/usr/etc/init.d/rcS: line 165: /userfs/bin/dbus_apps_info: not found
+open /proc/tc3162/dbg_msg fail
+open /proc/tc3162/dbg_msg fail
+mtd[readflash]:device=reservearea tclen=262144 tcoffset=1310720
+Unlocking reservearea ...
+Reading from reservearea to /tmp/prolinecwmppararead ... 
+/tmp/cfg_load is not exist
+
+00000000h: 72 06 99 04 1D 01 19 05 FF FF FF FF AA 00 4D 52
+00000010h: FF FF FF FF FF Frandom: ubusd urandom read with 77 bits of entropy available
+F FF FF FF FF FF FF FF FF FF FF
+00000020h: 09 00 19 00 FF FF FF FF FF FF FF FF 02 00 00 00
+00000030h: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+00000040h: 8E 51 A8 00 FF FF FF FF FF FF FF FF FF FF FF FF
+00000050h: F0 0A 10 27 14 01 E8 03 1C 00 64 00 FF FF FF FF
+00000060h: FF FF FF FF 34 00 20 00 FF FF FF FF FF FF FF FF
+00000070h: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+00000080h: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+00000090h: FF FF FF FF 01 07 05 07 FF FF FF FF FF FF FF FF
+000000a0h: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+000000b0h: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+000000c0h: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+000000d0h: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF
+000000e0h:MAXNET DPI interface Loaded
+ 00svchost_parse_print_conf: Path = /lib/libcfg_clisvc.so 
+svchost_parse_print_conf: Entry = svc_cfg_main 
+svchost_parse_print_conf: Param = 111 
+svc_cfg_start: ........ 
+Load cfg from file [/var/romfile.cfg] ..... 
+ctromfile.cfg
+insmod: can't insert '/lib/modules/tcfullcone.ko': No such file or directory
+TCSUPPORT_IPV6
+
+tcaccesslimit version: accesslimit V1.2.0.0 (Nov  6 2019-19:52:06).
+TC3162 LED Manager 0.1 init
+
+tcledctrl version: tcledctrl V1.1.0.0 (Jul 10 2020-17:35:58).
+find led.conf error
+led path:/userfs/led.conf
+set led_no 83 active
+set led_no 84 active
+tccicmd V1.1.0.0 (Jul 10 2020-17:36:01)
+
+SIFMaster 0.1 init
+===== Interface 0 is ON =====
+
+Register sifm cmd
+
+soft_ratelimit_init
+mtd[readflash]:device=romfile tclen=65536 tcoffset=0
+Unlocking romfile ...
+Reading from romfile to /tmp/var/romfile.cfg~~ ... 
+Adapter_Interrupts_Init: Successfully hooked IRQ 8
+
+Adapter_Interrupts_Init: call back registeredAdapter_EIP93_Init: CmdRing_Handle=995b2ffc
+Adapter_EIP93_Init: ResRing_Handle=995b2ff8
+Adapter: Successfully initialized EIP93v2 in ARM mode
+PEC_Init: PRNG is initialized
+Check romfile pass!
+mtd[readflash]:device=reservearea tclen=262144 tcoffset=524288
+0===errno:0
+ errmessage:Success
+1===errno:0
+ errmessage:Success
+2==errno:0
+ errmessage:Success
+insmod ETH_LAN driver
+Unlocking reservearea ...
+Reading from reservearea to /tmp/tc_backupromfile ... 
+ECNT_HOOK_ERROR occur. ECNT_API_XPON_MODE_GET:200
+/tmp/cfg_load is not exist
+cpu:1, nbq:1
+cpu:1, nbq:1
+cpu:1, nbq:2
+cpu:1, nbq:1
+cpu:1, nbq:1
+cpu:1, nbq:1
+cpu:1, nbq:1
+cpu:1, nbq:1
+cpu:1, nbq:1
+cpu:1, nbq:1
+cpu:1, nbq:1
+cpu:1, nbq:1
+cpu:1, nbq:1
+cpu:1, nbq:2
+cpu:1, nbq:1
+cpu:1, nbq:1
+cpu:1, nbq:1
+cpu:1, nbq:1
+cpu:1, nbq:1
+cpu:1, nbq:1
+[BK_ROMFILE_FLAG]/userfs/bin/mtd readflash /tmp/tc_backupromfile 262144 524288 reservearea
+macType = 0
+tso_proc_init.
+netif_napi_add() called with weight 256 on device lan_int2_if
+ether.c:v1.00-NAPI 29.Mar.2015
+eth0: FE MAC Ethernet address: 
+Use Internal switch ,type 10
+ctromfile.cfg
+svc_cfg_start: ........ ok [20001030]! 
+tcPhyVerLookUp 2463 9491 
+ 7528 Ge, 
+ [tcPhyInit] in  [tcPhyInit] out , r31 = (9, 0x0) 
+ 7528 GbE eco_rev (0x1) &0xff(0x1)
+ GE Rxet cal (1)(1)(1)(0x1f)  
+ GE Rxet cal (2)(1)(1)(0x1e)  
+ GE Rxet cal (3)(1)(1)(0x1d)  
+ GE Rxet cal (4)(1)(1)(0x1c)  
+  GE Rext AnaCal Done! (5)(0x1b)  
+  GE Rext AnaCal Done! (5)(0x1b)  
+  GE R45 zcal_idx (28) (0x1c) 
+  GE R45 AnaCal Done! (4) (0x41)(0xc1) 
+  GE R45 zcal_idx (27) (0x1b) 
+  GE R45 AnaCal Done! (5) (0x42)(0xc2) 
+  GE R45 zcal_idx (27) (0x1b) 
+  GE R45 AnaCal Done! (5) (0x42)(0xc2) 
+  GE R45 zcal_idx (27) (0x1b) 
+  GE R45 AnaCal Done! (5) (0x42)(0xc2) 
+ GE Tx offset AnaCal Done! (2)(0x22)  
+ GE Tx offset AnaCal Done! (3)(0x23)  
+ GE Tx offset AnaCal Done! (1)(0x21)  
+ GE Tx offset AnaCal Done! (3)(0x23)  
+ GE Tx amp AnaCal Done! (7) (0x19)
+ GE Tx amp AnaCal Done! (19) (0xd)
+ GE Tx amp AnaCal Done! (14) (0x12)
+ GE Tx amp AnaCal Done! (11) (0x15)
+tcPhyVerLookUp 2463 9491 
+ 7528 Ge, 
+ [tcPhyInit] in  [tcPhyInit] out , r31 = (10, 0x0) 
+ 7528 GbE eco_rev (0x1) &0xff(0x1)
+  GE R45 zcal_idx (27) (0x1b) 
+  GE R45 AnaCal Done! (5) (0x42)(0xc2) 
+  GE R45 zcal_idx (28) (0x1c) 
+  GE R45 AnaCal Done! (4) (0x41)(0xc1) 
+  GE R45 zcal_idx (27) (0x1b) 
+  GE R45 AnaCal Done! (5) (0x42)(0xc2) 
+  GE R45 zcal_idx (27) (0x1b) 
+  GE R45 AnaCal Done! (5) (0x42)(0xc2) 
+ GE Tx offset AnaCal Done! (3)(0x3)  
+ GE Tx offset AnaCal Done! (3)(0x23)  
+ GE Tx offset AnaCal Done! (3)(0x23)  
+ GE Tx offset AnaCal Done! (5)(0x25)  
+ GE Tx amp AnaCal Done! (12) (0x14)
+ GE Tx amp AnaCal Done! (17) (0xf)
+ GE Tx amp AnaCal Done! (14) (0x12)
+ GE Tx amp AnaCal Done! (13) (0x13)
+tcPhyVerLookUp 2463 9491 
+ 7528 Ge, 
+ [tcPhyInit] in  [tcPhyInit] out , r31 = (11, 0x0) 
+ 7528 GbE eco_rev (0x1) &0xff(0x1)
+  GE R45 zcal_idx (28) (0x1c) 
+  GE R45 AnaCal Done! (4) (0x41)(0xc1) 
+  GE R45 zcal_idx (27) (0x1b) 
+  GE R45 AnaCal Done! (5) (0x42)(0xc2) 
+  GE R45 zcal_idx (27) (0x1b) 
+  GE R45 AnaCal Done! (5) (0x42)(0xc2) 
+  GE R45 zcal_idx (28) (0x1c) 
+  GE R45 AnaCal Done! (4) (0x41)(0xc1) 
+ GE Tx offset AnaCal Done! (4)(0x24)  
+ GE Tx offset AnaCal Done! (1)(0x21)  
+ GE Tx offset AnaCal Done! (2)(0x2)  
+ GE Tx offset AnaCal Done! (2)(0x22)  
+ GE Tx amp AnaCal Done! (20) (0xc)
+ GE Tx amp AnaCal Done! (14) (0x12)
+ GE Tx amp AnaCal Done! (13) (0x13)
+ GE Tx amp AnaCal Done! (16) (0x10)
+tcPhyVerLookUp 2463 9491 
+ 7528 Ge, 
+ [tcPhyInit] in  [tcPhyInit] out , r31 = (12, 0x0) 
+ 7528 GbE eco_rev (0x1) &0xff(0x1)
+  GE R45 zcal_idx (27) (0x1b) 
+  GE R45 AnaCal Done! (5) (0x42)(0xc2) 
+  GE R45 zcal_idx (27) (0x1b) 
+  GE R45 AnaCal Done! (5) (0x42)(0xc2) 
+  GE R45 zcal_idx (28) (0x1c) 
+  GE R45 AnaCal Done! (4) (0x41)(0xc1) 
+  GE R45 zcal_idx (28) (0x1c) 
+  GE R45 AnaCal Done! (4) (0x41)(0xc1) 
+ GE Tx offset AnaCal Done! (1)(0x21)  
+ GE Tx offset AnaCal Done! (1)(0x1)  
+ GE Tx offset AnaCal Done! (4)(0x24)  
+ GE Tx offset AnaCal Done! (1)(0x1)  
+ GE Tx amp AnaCal Done! (12) (0x14)
+ GE Tx amp AnaCal Done! (18) (0xe)
+ GE Tx amp AnaCal Done! (16) (0x10)
+ GE Tx amp AnaCal Done! (5) (0x1b)
+svchost_parse_print_confrandom: nonblocking pool is initialized
+: Path = /lib/libcentral_ctrl_svc.so 
+svchost_parse_print_conf: Entry = svc_central_ctrl_main 
+svchost_parse_print_conf: Param = 111 
+svchost_parse_print_conf: Path = /lib/libwan_related_svc.so 
+svchost_parse_printeth0: starting interface.
+_netif_start_queue
+
+Init ETH LED
+conf: Entry = svc_wan_related_main 
+svchost_parse_print_conf: Param = 111 
+svchost_parse_print_conf: Path = /lib/libmesh_svc.so 
+svchost_parse_print_conf: Entry = svc_mesh_main 
+svchost_parse_print_conf: Param = 111 
+svchost_parse_print_conf: Path = /lib/libwan_svc.so 
+svchost_parse_print_conf: Entry = svc_wan_main 
+svchost_parse_print_conf: Param = 111 
+svchost_parse_print_conf: Path = /lib/libpon_svc.so 
+svchost_parse_print_conf: Entry = svc_pon_main 
+svchost_parse_print_conf: Param = 111 
+svchost_parse_print_conf: Path = /lib/libother_svc.so 
+svchost_parse_print_conf: Entry = svc_other_main 
+svchost_parse_print_conf: Param = 111 
+svchost_parse_print_conf: Path = /lib/libvoip_svc.so 
+svchost_parse_print_conf: Entry = svc_voip_main 
+svchost_parse_print_conf: Param = 111 
+svchost_parse_print_conf: Path = /lib/libwlan_svc.so 
+svchost_parse_print_conf: Entry = svc_wlan_main 
+svchost_parse_print_conf: Param = 111 
+svc_voip_ivoip_mgr_polling_pthread created.
+nt: voip_mgr_polling_pthread entered.
+num = 4
+svc_voip_init: ...... reg event ok 
+svc_pon_int: ...... reg event ok 
+svc_pon_int: ...... reg method ok 
+cfg svc load done, 0 ms
+mtd[readflash]:device=reservearea tclen=1 tcoffset=2097152
+Unlocking reservearea ...
+Reading from reservearea to /tmp/dual_image_boot_flag ... 
+mtd[readflash]:device=reservearea tclen=2120 tcoffset=1310720
+Unlocking reservearea ...
+Reading from reservearea to /tmp/productlinecwmpfile ... 
+File /etc/deviceParaStatic.conf content Lanports= is worng
+File /etc/deviceParaStatic.conf content Lanports= is worng
+File /etc/deviceParaStatic.conf content Lanports= is worng
+File /etc/deviceParaStatic.conf content Lanports= is worng
+File /etc/deviceParaStatic.conf content Lanports= is worng
+File /etc/deviceParaStatic.conf content Lanports= is worng
+svc_centrl_ctrl_init: ...... reg event ok 
+PID=178 event receive pthread_create OK, keep going......
+svc_mesh reg event ok
+svc_other_init: ...... reg event ok 
+svc_wan_related_init: ...... reg event ok 
+svc_wlan_init: ...... reg event ok 
+macType = 0
+tso_proc_init.
+fe resource init start
+svc_wan_init: ....val_string:add v4 - 445 - -
+
+dport:0, sport:445, daddr:0, saddr:0
+.. reg event ok 
+===== xPON PHY Power_Saving Mode: ENABLE =====
+E3 patched
+EN7571 found!
+FLASH matrix got
+PWRADC offset = 0x3779
+PWRADC ready
+BG 1.76V = 0x294
+BG 0.875V = 0x145
+RSSI_Vref = 0x21a
+RSSI_V = 0x29b
+eFuse value = 0xfc
+eFuse offset = -1.2'C
+Start GPON Tx Calibration
+RGS_T0C = 0x4d
+RGS_T1C = 0x52
+APD initialization done
+Initial current loaded
+PWR/ER loaded
+TIASD = 0x44
+Rx LOS is set
+Internal DDMI Enabled
+KT Enabled
+EN7571 Initialization Done!
+REG_PHY_SET3 = 0x4581e112.
+PON PHY driver version is 190729.107.8
+xPON driver initialization
+Alloc data struct memory successful, 35504
+the channel id_is must between 0 and 15  
+the channel id_is must between 0 and 15  
+the channel id_is must between 0 and 15  
+the channel id_is must between 0 and 15  
+the channel id_is must between 0 and 15  
+the channel id_is must between 0 and 15  
+the channel id_is must between 0 and 15  
+the channel id_is must between 0 and 15  
+the channel id_is must between 0 and 15  
+the channel id_is must between 0 and 15  
+the channel id_is must between 0 and 15  
+the channel id_is must between 0 and 15  
+the channel id_is must between 0 and 15  
+the channel id_is must between 0 and 15  
+the channel id_is must between 0 and 15  
+the channel id_is must between 0 and 15  
+XPON Mapping Module init OK!
+vtag_drv_init
+
+tc_multiwan version: tcsmux V1.1.0.0 (Aug 18 2020-01:17:21).
+
+tcportbind version: tcportbind V1.1.0.0 (Nov  6 2019-19:52:16).
+get_wdev_by_idx: invalid idx(0)
+get_wdev_by_idx: invalid idx(0)
+pon_vlan_init
+
+Multi Lan port
+
+ initilize xpon igmp module....done!
+pon_mac_filter_init
+
+Multi Lan portinsmod: can't insert '/lib/modules/brg_shortcut.ko': No such file or directory
+mtd[readflash]:device=
+
+qos_discipline_initreservearea tclen=2120 tcoffset=1310720
+insmod: can't insert '/pfrm2.0/lib/modules/3.18.21/kernel/net/sched/act_mirred.ko': No such file or directory
+insmod: can't insert '/pfrm2.0/lib/modules/3.18.21/kernel/net/sched/cls_fw.ko': No such file or directory
+insmod: can't insert '/pfrm2.0/lib/modules/3.18.21/kernel/net/sched/sch_htb.ko': No such file or directory
+insmod: can't insert '/pfrm2.0/lib/modules/3.18.21/kernel/net/sched/sch_prio.ko': No such file or directory
+Unlocking reservearea ...
+Reading from reservearea to /tmp/productlinecwmpfile ... 
+ifconfig: SIOCGIFFLAGS: No such device
+svchost_get_event_val: get param fail [0] 
+insmod: can't insert '/lib/modules/igmpsnoop.ko': No such file or directory
+insmod: can't insert '/lib/modules/mldsnooping.ko': No such file or directory
+ra0       no private ioctls.
+
+read WLAN driver from rt_device failed,set with default value!
+get_itf_hwaddr 1270: ioctl open fail
+get_wdev_by_idx: invalid idx(0)
+WPSActiveStatus = N==>check_wireless_ac_card: error when get ra0 EEPROM data
+ULL
+WPSOOget_wdev_by_idx: invalid idx(0)
+BActive = NULL
+ReCounterActive = NULL
+WPSGenPinCode = NULL
+ra0       no private ioctls.
+
+ra0       no private ioctls.
+
+ra0       no private ioctls.
+
+ra0       no private ioctls.
+
+ra1       no private ioctls.
+
+ra1       no private ioctls.
+
+ra1       no private ioctls.
+
+ra1       no private ioctls.
+
+ra2       no private ioctls.
+
+ra2       no private ioctls.
+
+ra2       no private ioctls.
+
+ra2       no private ioctls.
+
+ra3       no private ioctls.
+
+ra3       no private ioctls.
+
+ra3       no private ioctls.
+
+ra3       no private ioctls.
+
+write_wlan11ac_config:wifimgr_lib_set_wdskey fail.
+write_wlan11ac_config:wifimgr_lib_set_wdskey fail.
+write_wlan11ac_config:wifimgr_lib_set_wdskey fail.
+write_wlan11ac_config:wifimgr_lib_set_wdskey fail.
+mtd[readflash]:device=reservearea tclen=512 tcoffset=1835008
+Unlocking reservearea ...
+Reading from reservearea to /tmp/RT30xxEEPROM.bin ... 
+Ralink HW NAT Module Enabled
+HWNAT Module enabled with Type:L2B/IPv4/IPv6/DS-LITE/6RD, foeSize:80B, foeNum:16384
+IP check use Black List
+Setting Hostname... Done.
+killall: wscd: no process killed
+svchost_get_event_val: get param fail [0] 
+read WLAN driver from rt_device failed,set with default value!
+ponTime:ONU Ready
+==>check_wireless_ac_card: error when get ra0 EEPROM data
+get_wdev_by_idx: invalid idx(0)
+WPSActiveStatus ===>check_wireless_ac_card: error when get ra0 EEPROM data
+ NULL
+get_wdev_by_idx: invalid idx(0)
+mtd[readflash]:device=r==>check_wireless_ac_card: error when get ra0 EEPROM data
+eservearea tclget_wdev_by_idx: invalid idx(0)
+en=1 tcoffset=2097152
+WPSOOBActive = NULL
+ReC==>check_wireless_ac_card: error when get ra0 EEPROM data
+ounterActive =get_wdev_by_idx: invalid idx(0)
+ NULL
+WPSGenPinCode = NULL
+get_wdev_by_idx: invalid idx(0)
+Unlocking reservearea ...
+Reading from reservearea to /tmp/image_boot_flag_read ... 
+mtd[readflash]:device=reservearea tclen=1 tcoffset=2097152
+Unlocking reservearea ...
+Reading from reservearea to /tmp/image_boot_flag_read ... 
+write_wlan11ac_config:write CountryRegion to data file fail.
+debug 4.
+svchost_get_event_val: get param fail [0] 
+
+Send OAM Update config!
+!sendEponOamCmdMsg open message queue fail!
+set olt type: 1702129522
+web TR69 is invalid  
+web VOICE is invalid  
+ponTime:Connection Start
+rai1      no private ioctls.
+
+rai1      no private ioctls.
+
+rai1      no private ioctls.
+
+rai1      no private ioctls.
+
+ctromfile.cfg
+iptables v1.4.21: can't initialize iptables table `raw': Table does not exist (do you need to insmod?)
+Perhaps iptables or your kernel needs to be upgraded.
+iptables v1.4.21: can't initialize iptables table `raw': Table does not exist (do you need to insmod?)
+Perhaps iptables or your kernel needs to be upgraded.
+rai1      no private ioctls.
+
+ifconfig: SIOCSIFMTU: No such device
+rai1      no private ioctls.
+
+rai2      no private ioctls.
+
+rai2      no private ioctls.
+
+rai2      no private ioctls.
+
+rai2      no private ioctls.
+
+rai2      no private ioctls.
+
+rai2      no private ioctls.
+
+rai3      no private ioctls.
+
+rai3      no private ioctls.
+
+rai3      no private ioctls.
+
+rai3      no private ioctls.
+
+rai3      no private ioctls.
+
+rai3      no private ioctls.
+
+write_wlan11ac_config:wifimgr_lib_set_wdskey fail.
+write_wlan11ac_config:wifimgr_lib_set_wdskey fail.
+write_wlan11ac_config:wifimgr_lib_set_wdskey fail.
+write_wlan11ac_config:wifimgr_lib_set_wdskey fail.
+mtd[readflash]:device=reservearea tclen=1536 tcoffset=307200
+Unlocking reservearea ...
+Reading from reservearea to /tmp/MT7610EEPROM.bin ... 
+killall: wscd: no process killed
+/bin/sh: can't create /proc/sys/net/ipv6/conf/nas0_0/disable_ipv6: nonexistent directory
+Unlocking romfile ...
+Writing from /tmp/tc_store_romfile.conf to romfile ... 
+ [ ][e][w]not Error writing tclinux,mtd=romfile.
+
+Unlocking reservearea ...
+Erase one sector from 0x80000 of reservearea ... 
+tcoffset:0x80000,mtdInfo.size:0x240000 size-1:1ffff
+enter real action ----- tcoffset:0x80000
+[e]mtd[writeflash]:device=reservearea tclen=262144 tcoffset=524288 tcfilelen =11230
+Unlocking reservearea ...
+Writing from /tmp/tc_store_romfile.conf to reservearea ... 
+enter real action -----tclen:0x40000,tcoffset:0x80000
+writeflash: write 0 'st sector,start from 0x80000,0x20000 bytes
+[e][w]Illegal target name 'vbind_entry0_chain'.
+Chain 'vbind_entry0_chain' doesn't exist.
+Illegal target name 'vbind_entry1_chain'.
+enter real action -----tclen:0x20000,tcoffset:0xa0000
+writeflash: write 1 'st sector,start from 0xa0000,0x20000 bytes
+read:count <= 0
+writeflash: total write 0x2bde bytes
+
+Chain 'vbind_entry1_chain' doesn't exist.
+Illegal target name 'vbind_entry2_chain'.
+Chain 'vbind_entry2_chain' doesn't exist.
+Illegal target name 'vbind_entry3_chain'.
+Chain 'vbind_entry3_chain' doesn't exist.
+Illegal target name 'vbind_entry4_chain'.
+Chain 'vbind_entry4_chain' doesn't exist.
+Illegal target name 'vbind_entry5_chain'.
+Chain 'vbind_entry5_chain' doesn't exist.
+Illegal target name 'vbind_entry6_chain'.
+Chain 'vbind_entry6_chain' doesn't exist.
+Illegal target name 'vbind_entry7_chain'.
+Chain 'vbind_entry7_chain' doesn't exist.
+Illegal target name 'vbind_entry8_chain'.
+Chain 'vbind_entry8_chain' doesn't exist.
+Illegal target name 'vbind_entry9_chain'.
+Chain 'vbind_entry9_chain' doesn't exist.
+Illegal target name 'vbind_entry10_chain'.
+Chain 'vbind_entry10_chain' doesn't exist.
+Computed MAC for LAN1 = 
+Illegal target name 'vbind_entry11_chain'.
+Chain 'vbind_entry11_chain' doesn't exist.
+Illegal target name 'vbind_entry12_chain'.
+Chain 'vbind_entry12_chain' doesn't exist.
+Illegal target name 'vbind_entry13_chain'.
+Chain 'vbind_entry13_chain' doesn't exist.
+Illegal target name 'vbind_entry14_chain'.
+Computed MAC for LAN2 = 
+Chain 'vbind_entry14_chain' doesn't exist.
+Illegal target name 'vbind_entry15_chain'.
+Chain 'vbind_entry15_chain' doesn't exist.
+Illegal target name 'vbind_entry16_chain'.
+Chain 'vbind_entry16_chain' doesn't exist.
+Illegal target name 'vbind_entry17_chain'.
+Chain 'vbind_entry17_chain' doesn't exist.
+Computed MAC for LAN3 = 
+four ports
+Illegal target name 'vbind_entry18_chain'.
+Chain 'vbind_entry18_chain' doesn't exist.
+interface eth0.1 does not exist!
+Illegal target name 'vbind_entry19_chain'.
+ifconfig: SIOCSIFHWADDR: No such device
+Chain 'vbind_entry19_chain' doesn't exist.
+interface eth0.2 does not exist!
+Illegal target name 'vbind_entry20_chain'.
+Chain 'vbind_entry20_chain' doesn't exist.
+ifconfig: SIOCSIFHWADDR: No such device
+Illegal target name 'vbind_entry21_chain'.
+Chain 'vbind_entry21_chain' doesn't exist.
+interface eth0.3 does not exist!
+Illegal target name 'vbind_entry22_chain'.
+ifconfig: SIOCSIFHWADDR: No such device
+Chain 'vbind_entry22_chain' doesn't exist.
+interface eth0.4 does not exist!
+Illegal target name 'vbind_entry23_chain'.
+ifconfig: SIOCSIFHWADDR: No such device
+interface eth0 does not exist!
+Chain 'vbind_entry23_chain' doesn't exist.
+Illegal target name 'vbind_entry24_chain'.
+ifconfig: SIOCSIFHWADDR: No such device
+Chain 'vbind_entry24_chain' doesn't exist.
+Illegal target name 'vbind_entry25_chain'.
+Chain 'vbind_entry25_chain' doesn't exist.
+The path is invalid, and the path should include entry.
+interface eth0 does not exist!
+ifconfig: SIOCGIFFLAGS: No such device
+ifconfig: SIOCSIFHWADDR: No such device
+interface eth0.1 does not exist!
+ifconfig: SIOCSIFHWADDR: No such device
+interface eth0.2 does not exist!
+ifconfig: SIOCSIFHWADDR: No such device
+interface eth0.3 does not exist!
+ifconfig: SIOCSIFHWADDR: No such device
+interface eth0.4 does not exist!
+ifconfig: SIOCSIFHWADDR: No such device
+ifconfig: SIOCGIFFLAGS: No such device
+interface eth0.5 does not exist!
+ifconfig: SIOCSIFHWADDR: No such device
+ifconfig: SIOCSIFHWADDR: No such device
+IPv6: ADDRCONF(NETDEV_UP): bdg2: link is not ready
+count =5 1=mapd_cli 2=/tmp/mapd_ctrl
+mapd_interface_ctrl_open failed
+Can't connect to /tmp/mapd_ctrl
+get_wdev_by_idx: invalid idx(0)
+get_wdev_by_idx: invalid idx(0)
+Loading Factory Defaults Modulecan't open device gpio-device
+NET: Registered protocol family 31
+kernel UMI module loaded
+Loading WpsPB Module..sqlite3QueryResGet failed:query was SELECT * FROM dbUpdateRegisterTbl ORDER BY tableName
+Done
+Starting sqlite daemon... DoneStarting Switch Manager... Done
+Starting EasyMesh daemon... Done
+/pfrm2.0/bin/radEap: functionality is unavailable
+/pfrm2.0/bin/dot11d: functionality is unavailable
+Loading ifDev module
+Starting ifDev daemon... Done
+Restoring certficates from persistant storage...
+11 1Starting web server...Done
+starting ntpd Daemon...Done
+Inserting ipset modules...Done
+starting firewalld Daemon...Done
+Starting NIMF daemon... Done
+inserting default firewall rules
+inserting default firewall6 rules
+Starting SLAACD daemon... Done
+importing configuration...
+get_wdev_by_idx: invalid idx(0)
+Untagged port eth1.1 is subset of FORWARD_MAP
+Untagged port eth2.1 is subset of FORWARD_MAP
+Untagged port eth3.1 is subset of FORWARD_MAP
+Untagged port eth4.1 is subset of FORWARD_MAP
+port: 1, eg_tag: 0
+write reg: 2110, value: 81008000
+port: 2, eg_tag: 0
+write reg: 2210, value: 81008000
+port: 3, eg_tag: 0
+write reg: 2310, value: 81008000
+port: 4, eg_tag: 0
+write reg: 2410, value: 81008000
+port: 6, eg_tag: 0
+write reg: 2610, value: 81008020
+subcmd parameter argc = 9
+Added VLAN with VID == 1 to IF -:eth0.1:-
+WARNING:  VLAN 1 does not work with many switches,
+consider another number if you have problems.
+device eth0.1.1 entered promiscuous mode
+device eth0.1 entered promiscuous mode
+bdg2: port 1(eth0.1.1) entered forwarding state
+bdg2: port 1(eth0.1.1) entered forwarding state
+IPv6: ADDRCONF(NETDEV_CHANGE): bdg2: link becomes ready
+Added VLAN with VID == 1 to IF -:eth0.2:-
+WARNING:  VLAN 1 does not work with many switches,
+consider another number if you have problems.
+device eth0.2.1 entered promiscuous mode
+device eth0.2 entered promiscuous mode
+bdg2: port 2(eth0.2.1) entered forwarding state
+bdg2: port 2(eth0.2.1) entered forwarding state
+Added VLAN with VID == 1 to IF -:eth0.3:-
+WARNING:  VLAN 1 does not work with many switches,
+consider another number if you have problems.
+device eth0.3.1 entered promiscuous mode
+device eth0.3 entered promiscuous mode
+bdg2: port 3(eth0.3.1) entered forwarding state
+bdg2: port 3(eth0.3.1) entered forwarding state
+Added VLAN with VID == 1 to IF -:eth0.4:-
+WARNING:  VLAN 1 does not work with many switches,
+consider another number if you have problems.
+device eth0.4.1 entered promiscuous mode
+device eth0.4 entered promiscuous mode
+bdg2: port 4(eth0.4.1) entered forwarding state
+bdg2: port 4(eth0.4.1) entered forwarding state
+subcmd parameter argc = 9
+bdg2: port 4(eth0.4.1) entered disabled state
+bdg2: port 3(eth0.3.1) entered disabled state
+bdg2: port 2(eth0.2.1) entered disabled state
+bdg2: port 1(eth0.1.1) entered disabled state
+bdg2: port 4(eth0.4.1) entered forwarding state
+bdg2: port 4(eth0.4.1) entered forwarding state
+bdg2: port 3(eth0.3.1) entered forwarding state
+bdg2: port 3(eth0.3.1) entered forwarding state
+bdg2: port 2(eth0.2.1) entered forwarding state
+bdg2: port 2(eth0.2.1) entered forwarding state
+bdg2: port 1(eth0.1.1) entered forwarding state
+bdg2: port 1(eth0.1.1) entered forwarding state
+Skipping bridgePorts as this is  not used in Econet devices
+get_wdev_by_idx: invalid idx(0)
+get_wdev_by_idx: invalid idx(0)
+get_wdev_by_idx: invalid idx(0)
+get_wdev_by_idx: invalid idx(0)
+get_wdev_by_idx: invalid idx(0)
+get_wdev_by_idx: invalid idx(0)
+get_wdev_by_idx: invalid idx(0)
+get_wdev_by_idx: invalid idx(0)
+get_wdev_by_idx: invalid idx(0)
+get_wdev_by_idx: invalid idx(0)
+get_wdev_by_idx: invalid idx(0)
+get_wdev_by_idx: invalid idx(0)
+Igmp one time enabling done already
+bridge name bdg2 has exist
+bridge name bdg2 has exist
+get_wdev_by_idx: invalid idx(0)
+get_wdev_by_idx: invalid idx(0)
+get_wdev_by_idx: invalid idx(0)
+get_wdev_by_idx: invalid idx(0)
+get_wdev_by_idx: invalid idx(0)
+get_wdev_by_idx: invalid idx(0)
+get_wdev_by_idx: invalid idx(0)
+get_wdev_by_idx: invalid idx(0)
+get_wdev_by_idx: invalid idx(0)
+get_wdev_by_idx: invalid idx(0)
+get_wdev_by_idx: invalid idx(0)
+get_wdev_by_idx: invalid idx(0)
+get_itf_hwaddr 1270: ioctl open fail
+get_wdev_by_idx: invalid idx(0)
+WPSActiveStatus = NUL==>check_wireless_ac_card: error when get ra0 EEPROM data
+L
+WPSOOBActivget_wdev_by_idx: invalid idx(0)
+e = NULL
+ReCounterActive = NULL
+WPSGenPinCode = NULL
+/userfs/bin/tcapi save
+svchost_get_event_val: get param fail [0] 
+
+Send OAM Update config!
+!ra0       no private ioctls.
+
+executing /usr/bin/brctl addif bdg2 ra0
+ctromfile.cfg
+ra0       no private ioctls.
+
+executing /usr/bin/brctl addif bdg2 ra2
+ra0       no private ioctls.
+
+Unlocking romfile ...
+Writing from /tmp/tc_store_romfile.conf to romfile ... 
+ [ ][e][w]ra0       no private ioctls.
+
+not Error writing tclinux,mtd=romfile.
+
+ra1       no private ioctls.
+
+ra1       no private ioctls.
+
+executing /usr/bin/brctl addif bdg2 ra3
+ra1       no private ioctls.
+
+ra1       no private ioctls.
+
+ra2       no private ioctls.
+
+ra2       no private ioctls.
+
+ra2       no private ioctls.
+
+ra2       no private ioctls.
+
+Unlocking reservearea ...
+Erase one sector from 0x80000 of reservearea ... 
+tcoffset:0x80000,mtdInfo.size:0x240000 size-1:1ffff
+enter real action ----- tcoffset:0x80000
+[e]ra3       no private ioctls.
+
+mtd[writeflash]:device=reservearea tclen=262144 tcoffset=524288 tcfilelen =11254
+Unlocking reservearea ...
+Writing from /tmp/tc_store_romfile.conf to reservearea ... 
+ra3       no private ioctls.
+
+enter real action -----tclen:0x40000,tcoffset:0x80000
+writeflash: write 0 'st sector,start from 0x80000,0x20000 bytes
+ra3       no private ioctls.
+
+[e][w]ra3       no private ioctls.
+
+write_wlan11ac_config:wifimgr_lib_set_wdskey fail.
+write_wlan11ac_config:wifimgr_lib_set_wdskey fail.
+write_wlan11ac_config:wifimgr_lib_set_wdskey fail.
+write_wlan11ac_config:wifimgr_lib_set_wdskey fail.
+WPSActiveStatu==>check_wireless_ac_card: error when get ra0 EEPROM data
+s = NULLget_wdev_by_idx: invalid idx(0)
+
+WPSOOBActive = NULL
+ReCounterActive = NULL
+WPSGenPinCode = NULL
+enter real action -----tclen:0x20000,tcoffset:0xa0000
+writeflash: write 1 'st sector,start from 0xa0000,0x20000 bytes
+read:count <= 0
+writeflash: total write 0x2bf6 bytes
+
+ra0       no private ioctls.
+
+ra0       no private ioctls.
+
+ra0       no private ioctls.
+
+ra0       no private ioctls.
+
+ra1       no private ioctls.
+
+ra1       no private ioctls.
+
+ra1       no private ioctls.
+
+ra1       no private ioctls.
+
+ra2       no private ioctls.
+
+ra2       no private ioctls.
+
+ra2       no private ioctls.
+
+ra2       no private ioctls.
+
+ra3       no private ioctls.
+
+ra3       no private ioctls.
+
+ra3       no private ioctls.
+
+ra3       no private ioctls.
+
+write_wlan11ac_config:wifimgr_lib_set_wdskey fail.
+write_wlan11ac_config:wifimgr_lib_set_wdskey fail.
+write_wlan11ac_config:wifimgr_lib_set_wdskey fail.
+write_wlan11ac_config:wifimgr_lib_set_wdskey fail.
+==>check_wireless_ac_card: error when get ra0 EEPROM data
+get_wdev_by_idx: invalid idx(0)
+WPSActiveStatus ==>check_wireless_ac_card: error when get ra0 EEPROM data
+= NULL
+get_wdev_by_idx: invalid idx(0)
+WPSOOBActive ===>check_wireless_ac_card: error when get ra0 EEPROM data
+ NULL
+get_wdev_by_idx: invalid idx(0)
+ReCounterActive = ==>check_wireless_ac_card: error when get ra0 EEPROM data
+NULL
+get_wdev_by_idx: invalid idx(0)
+WPSGenPinCode = NULL
+/userfs/bin/tcapi save
+svchost_get_event_val: get param fail [0] 
+
+Send OAM Update config!
+!rai0: ===> main_virtual_if_open
+get_wdev_by_idx: invalid idx(0)
+get_wdev_by_idx: invalid idx(0)
+get_wdev_by_idx: invalid idx(0)
+get_wdev_by_idx: invalid idx(0)
+RtmpOSFileOpen(): Error 2 opening /etc/wireless/l1profile.dat
+Read file "/etc/wireless/l1profile.dat" failed(errCode=1)!
+load l1profile failed!
+get_wdev_by_idx: invalid idx(0)
+get_wdev_by_idx: invalid idx(0)
+driver_own()::Try to Clear FW Own...
+driver_own()::Success to clear FW Own
+APWdsInitialize():WdsEntry[0]
+APWdsInitialize():WdsEntry[1]
+APWdsInitialize():WdsEntry[2]
+APWdsInitialize():WdsEntry[3]
+
+<--RATE_PRIOR AllocateSpinLock
+RtmpOSFileOpen(): Error 2 opening /etc/Wireless/RT2860/RT2860_2G.dat
+Open file "/etc/Wireless/RT2860/RT2860_2G.dat" failed!
+write_wlan11ac_confSSID[0]=JioFiber-5G, EdcaIdx=0
+igSSID[1]=JioFiber-BtXA4-BH, EdcaIdx=0
+:wrSSID[2]=Jio_2, EdcaIdx=0
+itSSID[3]=Jio_3, EdcaIdx=0
+e Countrcfg_mode=14
+cfg_mode=14
+cfg_mode=14
+wmode_band_equal(): Band Equal!
+yRegion to data filBandSteering=0
+e fa[TxPower] BAND0: 100
+il[PowerUpenable] BAND0: 0
+.[SKUenable] BAND0: 0
+
+de[PERCENTAGEenable] BAND0: 1
+b[BFBACKOFFenable] BAND0: 0
+uLinkTestSupport = 0
+g 4.
+profile: FragThreshold[0]=2346
+APEdca0
+APEdca1
+APEdca2
+APEdca3
+APSDCapable[0]=0
+APSDCapable[1]=0
+APSDCapable[2]=0
+APSDCapable[3]=0
+APSDCapable[4]=0
+APSDCapable[5]=0
+APSDCapable[6]=0
+APSDCapable[7]=0
+APSDCapable[8]=0
+APSDCapable[9]=0
+APSDCapable[10]=0
+APSDCapable[11]=0
+APSDCapable[12]=0
+APSDCapable[13]=0
+APSDCapable[14]=0
+APSDCapable[15]=0
+default ApCliAPSDCapable[0]=0
+DfsZeroWait Support=0/0
+DfsZeroWaitCacTime=255/255
+RTMPSetProfileParameters(): ACSCheckTime[0]=0 seconds
+read_itxbf: ITxBfEn = 1
+read_itxbf: BSSID[0]
+read_itxbf: MBSS[0] ITxBfEn = 1
+read_itxbf: More BSSID[1]
+read_itxbf: More MBSS[1] ITxBfEn = 1
+read_itxbf: More BSSID[2]
+read_itxbf: More MBSS[2] ITxBfEn = 1
+read_itxbf: More BSSID[3]
+read_itxbf: More MBSS[3] ITxBfEn = 1
+read_itxbf: Common.ITxBfEn = 1
+read_etxbf: ETxBfEnCond = 1
+read_etxbf: BSSID[0]
+read_etxbf: MBSS[0] ETxBfEnCond = 1
+read_etxbf: More BSSID[1]
+read_etxbf: More MBSS[1] ETxBfEnCond = 1
+read_etxbf: More BSSID[2]
+read_etxbf: More MBSS[2] ETxBfEnCond = 1
+read_etxbf: More BSSID[3]
+read_etxbf: More MBSS[3] ETxBfEnCond = 1
+[RTMPSetProfileParameters]Disable DFS/Zero wait=0/0
+[PMF]Set_PMFMFPC_Proc:: apidx=0, Desired MFPC=0
+[PMF]Set_PMFMFPR_Proc:: apidx=0, Desired MFPR=0
+[PMF]Set_PMFSHA256_Proc:: apidx=0, Desired PMFSHA256=0
+MapEnable=1
+MAP_Turnkey=1
+rtmp_read_wds_from_file(): WDS Profile
+APWdsInitialize():WdsEntry[0]
+APWdsInitialize():WdsEntry[1]
+APWdsInitialize():WdsEntry[2]
+APWdsInitialize():WdsEntry[3]
+WDS-Enable mode=0
+HT: WDEV[0] Ext Channel = BELOW
+ChipI=7663, Value=0, pcie_aspm in profile=0
+ICapMode = 0
+WtcSetMaxStaNum: MaxStaNum:108, BssidNum:4, WdsNum:4, ApcliNum:1, MaxNumChipRept:16, MinMcastWcid:130
+Top Init Done!
+Use dev_alloc_skb
+RX[0] DESC ba3a8000 size = 8192
+RX[1] DESC ba3aa000 size = 8192
+cut_through_init(): ct sw token number = 4095
+cut_through_token_list_init(): TokenList inited done!id_head/tail=0/4096
+cut_through_token_list_init(): 94904a88,94904a88
+cut_through_token_list_init(): TokenList inited done!id_head/tail=0/4096
+cut_through_token_list_init(): 94904a98,94904a98
+Hif Init Done!
+ctl->txq = c089fa4c
+ctl->rxq = c089fa58
+ctl->ackq = c089fa64
+ctl->kickq = c089fa70
+ctl->tx_doneq = c089fa7c
+ctl->rx_doneq = c089fa88
+mt7663_fw_prepare():using E2 ROM patch
+mt7663_fw_prepare():using E2 firmware
+Parsing patch header
+	Built date: 1912271816debug
+
+	Platform: 7663
+	HW/SW version: 0x6d702d31
+	Patch version: 0x3830328a
+	Target address: 0xdc000, length: 204096
+patch is not ready && get semaphore success
+Start address = 0xdc000, DL length = 204096, Data mode = 0x80000000
+EventGenericEventHandler: CMD Success
+MtCmdAddressLenReq:(ret = 0)
+MtCmdPatchFinishReq
+EventGenericEventHandler: CMD Success
+release patch semaphore
+WfMcuHwInit: Before NICLoadFirmware, check ICapMode = 0
+Parsing CPU 0 fw tailer
+	Chip ID: 0x08
+	Eco version: 0x01
+	Region number: 0x03
+	Format version: 0x02
+	Format flag: 0x01
+	Ram version: 7663mp1827
+	Built date: 20191227181808 
+	Common crc: 0x447cb04b
+Parsing tailer region 0
+	Decomp crc: 0x0
+	Decomp size: 0x0
+	Decomp block size: 0x0
+	Target address: 0x112c00
+	Download size: 277088
+	Feature set: 0x27
+Parsing tailer region 1
+	Decomp crc: 0x0
+	Decomp size: 0x0
+	Decomp block size: 0x0
+	Target address: 0x2018400
+	Download size: 70704
+	Feature set: 0x07
+Parsing tailer region 2
+	Decomp crc: 0x0
+	Decomp size: 0x0
+	Decomp block size: 0x0
+	Target address: 0x40100000
+	Download size: 14720
+	Feature set: 0x07
+	Release info: header tag = 0, total length = 0
+Start address = 0x112c00, DL length = 277088, Data mode = 0x8000000f
+EventGenericEventHandler: CMD Success
+MtCmdAddressLenReq:(ret = 0)
+Start address = 0x2018400, DL length = 70704, Data mode = 0x8000000f
+EventGenericEventHandler: CMD Success
+MtCmdAddressLenReq:(ret = 0)
+Start address = 0x40100000, DL length = 14720, Data mode = 0x8000000f
+EventGenericEventHandler: CMD Success
+MtCmdAddressLenReq:(ret = 0)
+MtCmdFwStartReq: override = 0x1, address = 0x112c00
+ctromfile.cfg
+EventGenericEventHandler: CMD Success
+MCU Init Done!
+efuse_probe: efuse = 511161
+RtmpChipOpsEepromHook::e2p_type=4, inf_Type=5
+RtmpEepromGetDefault::e2p_dafault=1
+RtmpChipOpsEepromHook: E2P type(4), E2pAccessMode = 4, E2P default = 1
+NVM is BIN mode
+Use the default /etc/Wireless/RT2860AP_AC/RT30xxEEPROM.bin bin image!
+rtmp_ee_load_from_bin::bin FileName=/etc/Wireless/RT2860AP_AC/RT30xxEEPROM.bin
+Load EEPROM Buffer from /etc/Wireless/RT2860AP_AC/RT30xxEEPROM.bin
+Cal Free IC!!
+mt7663_cal_free_data_get
+Unlocking romfile ...
+Writing from /tmp/tc_store_romfile.conf to romfile ... 
+ [ ][e][w]not Error writing tclinux,mtd=romfile.
+
+Unlocking reservearea ...
+Erase one sector from 0x80000 of reservearea ... 
+tcoffset:0x80000,mtdInfo.size:0x240000 size-1:1ffff
+enter real action ----- tcoffset:0x80000
+[e]mtd[writeflash]:device=reservearea tclen=262144 tcoffset=524288 tcfilelen =11254
+Unlocking reservearea ...
+Writing from /tmp/tc_store_romfile.conf to reservearea ... 
+enter real action -----tclen:0x40000,tcoffset:0x80000
+writeflash: write 0 'st sector,start from 0x80000,0x20000 bytes
+[e][w]enter real action -----tclen:0x20000,tcoffset:0xa0000
+writeflash: write 1 'st sector,start from 0xa0000,0x20000 bytes
+read:count <= 0
+writeflash: total write 0x2bf6 bytes
+
+now bb MainSsid mac 
+Country Region from e2p = 0
+mt7663_antenna_default_reset() todo
+RTMPReadTxPwrPerRate(444): Don't Support this now!
+RcRadioInit(): DbdcMode=0, ConcurrentBand=1
+RcRadioInit(): pRadioCtrl=9a298e38,Band=0,rfcap=3,channel=1,PhyMode=2 extCha=0xf
+AntCfgInit(2955): Not support for HIF_MT yet!
+MtReadPwrLimitTable: RF_LOCKDOWN Feature OFF !!!
+RtmpOSFileOpen(): Error 2 opening /etc_ro/Wireless/RT2860AP/Sku_default.dat
+--> Error opening file </etc_ro/Wireless/RT2860AP/Sku_default.dat>
+MtPwrLimitLoadParamHandle: Read Power Table Error!!
+MtReadPwrLimitTable: RF_LOCKDOWN Feature OFF !!!
+RtmpOSFileOpen(): Error 2 opening /etc_ro/Wireless/RT2860AP/Backoff_default.dat
+--> Error opening file </etc_ro/Wireless/RT2860AP/Backoff_default.dat>
+MtPwrLimitLoadParamHandle: Read Power Table Error!!
+EEPROM Init Done!
+mt_mac_init()-->
+mt_mac_pse_init(2958): Don't Support this now!
+mt7663_init_mac_cr()-->
+mt7663_init_mac_cr(): TMAC_TRCR0=0x82783c92
+MtAsicSetMacMaxLen(1073): Not support for HIF_MT yet!
+<--mt_mac_init()
+CmdRxHdrTransBLUpdateRsp::EventExtCmdResult.u4Status = 0x0
+CmdRxHdrTransBLUpdateRsp::EventExtCmdResult.u4Status = 0x0
+CmdRxHdrTransBLUpdateRsp::EventExtCmdResult.u4Status = 0x0
+MAC Init Done!
+MT7663BBPInit():BBP Initialization.....
+	Band 0: valid=1, isDBDC=0, Band=2, CBW=1, CentCh/PrimCh=1/1, prim_ch_idx=0, txStream=2
+	Band 1: valid=0, isDBDC=0, Band=0, CBW=0, CentCh/PrimCh=0/0, prim_ch_idx=0, txStream=0
+MT7663BBPInit() todo
+PHY Init Done!
+RtmpOSFileOpen(): Error 2 opening /etc/Wireless/RT2860/RT2860_2G.dat
+Open file "/etc/Wireless/RT2860/RT2860_2G.dat" failed!
+SSID[0]=JioFiber-5G, EdcaIdx=0
+SSID[1]=JioFiber-BtXA4-BH, EdcaIdx=0
+SSID[2]=Jio_2, EdcaIdx=0
+SSID[3]=Jio_3, EdcaIdx=0
+cfg_mode=14
+cfg_mode=14
+cfg_mode=14
+wmode_band_equal(): Band Equal!
+BandSteering=0
+[TxPower] BAND0: 100
+[PowerUpenable] BAND0: 0
+[SKUenable] BAND0: 0
+[PERCENTAGEenable] BAND0: 1
+[BFBACKOFFenable] BAND0: 0
+LinkTestSupport = 0
+profile: FragThreshold[0]=2346
+APEdca0
+APEdca1
+APEdca2
+APEdca3
+APSDCapable[0]=0
+APSDCapable[1]=0
+APSDCapable[2]=0
+APSDCapable[3]=0
+APSDCapable[4]=0
+APSDCapable[5]=0
+APSDCapable[6]=0
+APSDCapable[7]=0
+APSDCapable[8]=0
+APSDCapable[9]=0
+APSDCapable[10]=0
+APSDCapable[11]=0
+APSDCapable[12]=0
+APSDCapable[13]=0
+APSDCapable[14]=0
+APSDCapable[15]=0
+default ApCliAPSDCapable[0]=0
+DfsZeroWait Support=0/0
+DfsZeroWaitCacTime=255/255
+RTMPSetProfileParameters(): ACSCheckTime[0]=0 seconds
+read_itxbf: ITxBfEn = 1
+read_itxbf: BSSID[0]
+read_itxbf: MBSS[0] ITxBfEn = 1
+read_itxbf: More BSSID[1]
+read_itxbf: More MBSS[1] ITxBfEn = 1
+read_itxbf: More BSSID[2]
+read_itxbf: More MBSS[2] ITxBfEn = 1
+read_itxbf: More BSSID[3]
+read_itxbf: More MBSS[3] ITxBfEn = 1
+read_itxbf: Common.ITxBfEn = 1
+read_etxbf: ETxBfEnCond = 1
+read_etxbf: BSSID[0]
+read_etxbf: MBSS[0] ETxBfEnCond = 1
+read_etxbf: More BSSID[1]
+read_etxbf: More MBSS[1] ETxBfEnCond = 1
+read_etxbf: More BSSID[2]
+read_etxbf: More MBSS[2] ETxBfEnCond = 1
+read_etxbf: More BSSID[3]
+read_etxbf: More MBSS[3] ETxBfEnCond = 1
+[RTMPSetProfileParameters]Disable DFS/Zero wait=0/0
+[PMF]Set_PMFMFPC_Proc:: apidx=0, Desired MFPC=0
+[PMF]Set_PMFMFPR_Proc:: apidx=0, Desired MFPR=0
+[PMF]Set_PMFSHA256_Proc:: apidx=0, Desired PMFSHA256=0
+MapEnable=1
+MAP_Turnkey=1
+rtmp_read_wds_from_file(): WDS Profile
+APWdsInitialize():WdsEntry[0]
+APWdsInitialize():WdsEntry[1]
+APWdsInitialize():WdsEntry[2]
+APWdsInitialize():WdsEntry[3]
+WDS-Enable mode=0
+HT: WDEV[0] Ext Channel = BELOW
+ChipI=7663, Value=0, pcie_aspm in profile=0
+ICapMode = 0
+tx_pwr_comp_init():NotSupportYet!
+MtCmdSetMacTxRx:(ret = 0)
+asic_bss_beacon_init(): NotSupportedFunc for this arch(HIF_MT)!
+MtAsicSetChBusyStat(646): Not support for HIF_MT yet!
+AsicDisableSync(): NotSupportedFunc for this arch(HIF_MT)!
+MtAsicSetRalinkBurstMode(2219): Not support for HIF_MT yet!
+MtAsicSetPiggyBack(590): Not support for HIF_MT yet!
+WifiFwdSet::disabled=0
+AsicSetPreTbtt(): NotSupportedFunc for this arch(HIF_MT)!
+ap_ftkd> Initialize FT KDP Module...
+Main bssid = 00:00:00:00:00:00
+AsicSetRxFilter(): NotSupportedFunc for this arch(HIF_MT)!
+MtCmdSetMacTxRx:(ret = 0)
+AsicSetRxFilter(): NotSupportedFunc for this arch(HIF_MT)!
+MtCmdSetMacTxRx:(ret = 0)
+INIT REDUCE TCP ACK, rai0
+<==== mt_wifi_init, Status=0
+TxBfModuleEnCtrl:It's not DBDC mode
+MtCmdEDCCACtrl: BandIdx: 0, EDCCACtrl: 1
+MSTA_Init (1) ---> ApCli
+Register MSTA IF (apclii0) , pAd->MSTANum = 1
+Caller: SetCommonHT+0xb0/0x160
+
+phy_mode=49, ch=0, wdev_type=2
+ht_cap: ht_cap->HtCapInfo, 
+ldpc=1,ch_width=1,gf=0,sgi20=1,sgi40=1,tx_stbc=1,rx_stbc=1,amsdu_size=0
+ht_cap: ht_cap->HtCapParm, 
+mdpu_density=0, ampdu_factor=3
+WDS_Init():
+The new WDS interface MAC = 00:00:00:00:00:00
+  MacTabMatchWCID = 0
+Caller: SetCommonHT+0xb0/0x160
+
+phy_mode=49, ch=0, wdev_type=8
+ht_cap: ht_cap->HtCapInfo, 
+ldpc=1,ch_width=1,gf=0,sgi20=1,sgi40=1,tx_stbc=1,rx_stbc=1,amsdu_size=0
+ht_cap: ht_cap->HtCapParm, 
+mdpu_density=0, ampdu_factor=3
+The new WDS interface MAC = 00:00:00:00:00:00
+  MacTabMatchWCID = 0
+Caller: SetCommonHT+0xb0/0x160
+
+phy_mode=49, ch=0, wdev_type=8
+ht_cap: ht_cap->HtCapInfo, 
+ldpc=1,ch_width=1,gf=0,sgi20=1,sgi40=1,tx_stbc=1,rx_stbc=1,amsdu_size=0
+ht_cap: ht_cap->HtCapParm, 
+mdpu_density=0, ampdu_factor=3
+The new WDS interface MAC = 00:00:00:00:00:00
+  MacTabMatchWCID = 0
+Caller: SetCommonHT+0xb0/0x160
+
+phy_mode=49, ch=0, wdev_type=8
+ht_cap: ht_cap->HtCapInfo, 
+ldpc=1,ch_width=1,gf=0,sgi20=1,sgi40=1,tx_stbc=1,rx_stbc=1,amsdu_size=0
+ht_cap: ht_cap->HtCapParm, 
+mdpu_density=0, ampdu_factor=3
+The new WDS interface MAC = 00:00:00:00:00:00
+  MacTabMatchWCID = 0
+Caller: SetCommonHT+0xb0/0x160
+
+phy_mode=49, ch=0, wdev_type=8
+ht_cap: ht_cap->HtCapInfo, 
+ldpc=1,ch_width=1,gf=0,sgi20=1,sgi40=1,tx_stbc=1,rx_stbc=1,amsdu_size=0
+ht_cap: ht_cap->HtCapParm, 
+mdpu_density=0, ampdu_factor=3
+Total allocated 4 WDS interfaces!
+WtcSetMaxStaNum: MaxStaNum:108, BssidNum:4, WdsNum:4, ApcliNum:1, MaxNumChipRept:16, MinMcastWcid:130
+cp_support_is_enabled: set Driver CP_SUPPORT to Mode 2.
+
+==ecnt_wifi_rx_rps_hook===, pAd=c0181000
+RTMP_COM_IoctlHandle -> CMD_RTPRIV_IOCTL_VIRTUAL_INF_UP
+wifi_sys_open(), wdev idx = 0
+wdev_attr_update(): wdevId0 = 
+[RcGetHdevByPhyMode]-- channel 0 fix for rdev fetching
+[BuildChannelList] BandIdx = 0, PhyMode = 49, ChListNum = 9:
+[1;33m [RadarStateCheck] RD_NORMAL_MODE [m 
+phy_freq_adjust : no prim_ch value for adjust!
+Caller: wlan_operate_init+0xa4/0x11c
+
+phy_mode=49, ch=0, wdev_type=1
+ht_cap: ht_cap->HtCapInfo, 
+ldpc=1,ch_width=1,gf=0,sgi20=1,sgi40=1,tx_stbc=1,rx_stbc=1,amsdu_size=0
+ht_cap: ht_cap->HtCapParm, 
+mdpu_density=5, ampdu_factor=3
+AP inf up for ra_0(func_idx) OmacIdx=0
+AsicRadioOnOffCtrl(): DbdcIdx=0 RadioOn
+ApAutoChannelAtBootUp----------------->
+ApAutoChannelAtBootUp: AutoChannelBootup[0] = 1
+AsicSetRxFilter(): NotSupportedFunc for this arch(HIF_MT)!
+MtCmdSetMacTxRx:(ret = 0)
+[AutoChSelBuildChannelListFor5G] ChListNum5G = 9
+[41mAsicSwitchChannel(): 5G Channel:36, then must be Channel_Band:1 !![m
+[41mAsicSwitchChannel(): 5G Channel:40, then must be Channel_Band:1 !![m
+[41mAsicSwitchChannel(): 5G Channel:44, then must be Channel_Band:1 !![m
+[41mAsicSwitchChannel(): 5G Channel:48, then must be Channel_Band:1 !![m
+[41mAsicSwitchChannel(): 5G Channel:149, then must be Channel_Band:1 !![m
+[41mAsicSwitchChannel(): 5G Channel:153, then must be Channel_Band:1 !![m
+[41mAsicSwitchChannel(): 5G Channel:157, then must be Channel_Band:1 !![m
+[41mAsicSwitchChannel(): 5G Channel:161, then must be Channel_Band:1 !![m
+ApAutoChannelAtBootUp : Auto channel selection: Selected channel = 36, IsAband = 1
+[41m AutoChSelUpdateChannel(): Update channel for wdev for this band PhyMode = 49, Channel = 36 [m
+[1;33m [RadarStateCheck] RD_NORMAL_MODE [m 
+bdg2: port 4(eth0.4.1) entered forwarding state
+bdg2: port 3(eth0.3.1) entered forwarding state
+bdg2: port 2(eth0.2.1) entered forwarding state
+[41mAsicSwitchChannel(): 5G Channel:42, then must be Channel_Band:1 !![m
+ApAutoChannelAtBootUp<-----------------
+[PMF]APPMFInit:: apidx=0, MFPC=0, MFPR=0, SHA256=0
+Caller: SetCommonHT+0xb0/0x160
+
+phy_mode=49, ch=36, wdev_type=1
+bdg2: port 1(eth0.1.1) entered forwarding state
+ht_cap: ht_cap->HtCapInfo, 
+ldpc=1,ch_width=1,gf=0,sgi20=1,sgi40=1,tx_stbc=1,rx_stbc=1,amsdu_size=0
+ht_cap: ht_cap->HtCapParm, 
+mdpu_density=5, ampdu_factor=3
+wifi_sys_linkup(), wdev idx = 0
+wtc_acquire_groupkey_wcid: Found a non-occupied wtbl_idx:135 for WDEV_TYPE:1
+ LinkToOmacIdx = 0, LinkToWdevType = 1
+bssUpdateBmcMngRate (BSS_INFO_BROADCAST_INFO), CmdBssInfoBmcRate.u2BcTransmit= 8192, CmdBssInfoBmcRate.u2McTransmit = 8196
+UpdateBeaconHandler, BCN_UPDATE_INIT, OmacIdx = 0
+MtCmdTxPowerSKUCtrl: fgTxPowerSKUEn: 0, BandIdx: 0
+MtCmdTxBfBackoffCtrl: fgTxBFBackoffEn: 0, BandIdx: 0
+MtCmdTxPowerPercentCtrl: fgTxPowerPercentEn: 1, BandIdx: 0
+AsicSetTxStream(): NotSupportedFunc for this arch(HIF_MT)!
+AsicSetRxStream(): NotSupportedFunc for this arch(HIF_MT)!
+apidx 0 for WscUUIDInit
+Generate UUID for apidx(0)
+wifi_up_handle rai0.
+executing /usr/bin/brctl addif bdg2 rai0
+device rai0 entered promiscuous mode
+bdg2: port 5(rai0) entered forwarding state
+bdg2: port 5(rai0) entered forwarding state
+rai2: ===> mbss_virtual_if_open
+RTMP_COM_IoctlHandle -> CMD_RTPRIV_IOCTL_VIRTUAL_INF_UP
+wifi_sys_open(), wdev idx = 2
+wdev_attr_update(): wdevId2 = 
+Caller: wlan_operate_init+0xa4/0x11c
+
+phy_mode=49, ch=36, wdev_type=1
+ht_cap: ht_cap->HtCapInfo, 
+ldpc=1,ch_width=1,gf=0,sgi20=1,sgi40=1,tx_stbc=1,rx_stbc=1,amsdu_size=0
+ht_cap: ht_cap->HtCapParm, 
+mdpu_density=0, ampdu_factor=3
+AP inf up for ra_2(func_idx) OmacIdx=18
+AsicRadioOnOffCtrl(): DbdcIdx=0 RadioOn
+ApAutoChannelAtBootUp----------------->
+ApAutoChannelAtBootUp: AutoChannelBootup[0] = 1
+AsicSetRxFilter(): NotSupportedFunc for this arch(HIF_MT)!
+MtCmdSetMacTxRx:(ret = 0)
+ApAutoChannelAtBootUp<-----------------
+[PMF]APPMFInit:: apidx=2, MFPC=0, MFPR=0, SHA256=0
+Caller: SetCommonHT+0xb0/0x160
+
+phy_mode=49, ch=36, wdev_type=1
+ht_cap: ht_cap->HtCapInfo, 
+ldpc=1,ch_width=1,gf=0,sgi20=1,sgi40=1,tx_stbc=1,rx_stbc=1,amsdu_size=0
+ht_cap: ht_cap->HtCapParm, 
+mdpu_density=0, ampdu_factor=3
+wifi_sys_linkup(), wdev idx = 2
+wtc_acquire_groupkey_wcid: Found a non-occupied wtbl_idx:134 for WDEV_TYPE:1
+ LinkToOmacIdx = 12, LinkToWdevType = 1
+bssUpdateBmcMngRate (BSS_INFO_BROADCAST_INFO), CmdBssInfoBmcRate.u2BcTransmit= 8192, CmdBssInfoBmcRate.u2McTransmit = 8196
+UpdateBeaconHandler, BCN_UPDATE_INIT, OmacIdx = 12
+MtCmdTxPowerSKUCtrl: fgTxPowerSKUEn: 0, BandIdx: 0
+MtCmdTxBfBackoffCtrl: fgTxBFBackoffEn: 0, BandIdx: 0
+MtCmdTxPowerPercentCtrl: fgTxPowerPercentEn: 1, BandIdx: 0
+AsicSetTxStream(): NotSupportedFunc for this arch(HIF_MT)!
+AsicSetRxStream(): NotSupportedFunc for this arch(HIF_MT)!
+apidx 2 for WscUUIDInit
+Generate UUID for apidx(2)
+wifi_up_handle rai2.
+executing /usr/bin/brctl addif bdg2 rai2
+device rai2 entered promiscuous mode
+bdg2: port 6(rai2) entered forwarding state
+bdg2: port 6(rai2) entered forwarding state
+write_wlan11ac_config:wifimgr_lib_set_wdskey fail.
+write_wlan11ac_config:wifimgr_lib_set_wdskey fail.
+write_wlan11ac_config:wifimgr_lib_set_wdskey fail.
+write_wlan11ac_config:wifimgr_lib_set_wdskey fail.
+MtCmdGetThermalSensorResult: ActionIdx: 0, uBandIdx: 0
+rai3: ===> mbss_virtual_if_open
+RTMP_COM_IoctlHandle -> CMD_RTPRIV_IOCTL_VIRTUAL_INF_UP
+wifi_sys_open(), wdev idx = 3
+wdev_attr_update(): wdevId3 = 
+Caller: wlan_operate_init+0xa4/0x11c
+
+phy_mode=49, ch=36, wdev_type=1
+ht_cap: ht_cap->HtCapInfo, 
+ldpc=1,ch_width=1,gf=0,sgi20=1,sgi40=1,tx_stbc=1,rx_stbc=1,amsdu_size=0
+ht_cap: ht_cap->HtCapParm, 
+mdpu_density=0, ampdu_factor=3
+AP inf up for ra_3(func_idx) OmacIdx=19
+AsicRadioOnOffCtrl(): DbdcIdx=0 RadioOn
+ApAutoChannelAtBootUp----------------->
+ApAutoChannelAtBootUp: AutoChannelBootup[0] = 1
+AsicSetRxFilter(): NotSupportedFunc for this arch(HIF_MT)!
+MtCmdSetMacTxRx:(ret = 0)
+ApAutoChannelAtBootUp<-----------------
+[PMF]APPMFInit:: apidx=3, MFPC=0, MFPR=0, SHA256=0
+Caller: SetCommonHT+0xb0/0x160
+
+phy_mode=49, ch=36, wdev_type=1
+ht_cap: ht_cap->HtCapInfo, 
+ldpc=1,ch_width=1,gf=0,sgi20=1,sgi40=1,tx_stbc=1,rx_stbc=1,amsdu_size=0
+ht_cap: ht_cap->HtCapParm, 
+mdpu_density=0, ampdu_factor=3
+wifi_sys_linkup(), wdev idx = 3
+wtc_acquire_groupkey_wcid: Found a non-occupied wtbl_idx:133 for WDEV_TYPE:1
+ LinkToOmacIdx = 13, LinkToWdevType = 1
+bssUpdateBmcMngRate (BSS_INFO_BROADCAST_INFO), CmdBssInfoBmcRate.u2BcTransmit= 8192, CmdBssInfoBmcRate.u2McTransmit = 8196
+UpdateBeaconHandler, BCN_UPDATE_INIT, OmacIdx = 13
+MtCmdTxPowerSKUCtrl: fgTxPowerSKUEn: 0, BandIdx: 0
+MtCmdTxBfBackoffCtrl: fgTxBFBackoffEn: 0, BandIdx: 0
+MtCmdTxPowerPercentCtrl: fgTxPowerPercentEn: 1, BandIdx: 0
+AsicSetTxStream(): NotSupportedFunc for this arch(HIF_MT)!
+AsicSetRxStream(): NotSupportedFunc for this arch(HIF_MT)!
+apidx 3 for WscUUIDInit
+Generate UUID for apidx(3)
+wifi_up_handle rai3.
+WPSActiveStatus = NULL
+WPSOOBActive = NULL
+ReCounterActive = NULL
+WPSGenPinCode = NULL
+executing /usr/bin/brctl addif bdg2 rai3
+device rai3 entered promiscuous mode
+bdg2: port 7(rai3) entered forwarding state
+bdg2: port 7(rai3) entered forwarding state
+write_wlan11ac_config:write CountryRegion to data file fail.
+debug 4.
+/flash/dscpTo8021Pconfig.lua is not corrupted . continue importing 
+write_wlan11ac_config:wifimgr_lib_set_wdskey fail.
+write_wlan11ac_config:wifimgr_lib_set_wdskey fail.
+write_wlan11ac_config:wifimgr_lib_set_wdskey fail.
+write_wlan11ac_config:wifimgr_lib_set_wdskey fail.
+rai1: ===> mbss_virtual_if_open
+RTMP_COM_IoctlHandle -> CMD_RTPRIV_IOCTL_VIRTUAL_INF_UP
+wifi_sys_open(), wdev idx = 1
+wdev_attr_update(): wdevId1 = 
+Caller: wlan_operate_init+0xa4/0x11c
+
+phy_mode=49, ch=36, wdev_type=1
+ht_cap: ht_cap->HtCapInfo, 
+ldpc=1,ch_width=1,gf=0,sgi20=1,sgi40=1,tx_stbc=1,rx_stbc=1,amsdu_size=0
+ht_cap: ht_cap->HtCapParm, 
+mdpu_density=0, ampdu_factor=3
+AP inf up for ra_1(func_idx) OmacIdx=17
+AsicRadioOnOffCtrl(): DbdcIdx=0 RadioOn
+ApAutoChannelAtBootUp----------------->
+ApAutoChannelAtBootUp: AutoChannelBootup[0] = 1
+AsicSetRxFilter(): NotSupportedFunc for this arch(HIF_MT)!
+MtCmdSetMacTxRx:(ret = 0)
+ApAutoChannelAtBootUp<-----------------
+[PMF]APPMFInit:: apidx=1, MFPC=0, MFPR=0, SHA256=0
+Caller: SetCommonHT+0xb0/0x160
+
+phy_mode=49, ch=36, wdev_type=1
+ht_cap: ht_cap->HtCapInfo, 
+ldpc=1,ch_width=1,gf=0,sgi20=1,sgi40=1,tx_stbc=1,rx_stbc=1,amsdu_size=0
+ht_cap: ht_cap->HtCapParm, 
+mdpu_density=0, ampdu_factor=3
+wifi_sys_linkup(), wdev idx = 1
+wtc_acquire_groupkey_wcid: Found a non-occupied wtbl_idx:132 for WDEV_TYPE:1
+ LinkToOmacIdx = 11, LinkToWdevType = 1
+bssUpdateBmcMngRate (BSS_INFO_BROADCAST_INFO), CmdBssInfoBmcRate.u2BcTransmit= 8192, CmdBssInfoBmcRate.u2McTransmit = 8196
+UpdateBeaconHandler, BCN_UPDATE_INIT, OmacIdx = 11
+MtCmdTxPowerSKUCtrl: fgTxPowerSKUEn: 0, BandIdx: 0
+MtCmdTxBfBackoffCtrl: fgTxBFBackoffEn: 0, BandIdx: 0
+MtCmdTxPowerPercentCtrl: fgTxPowerPercentEn: 1, BandIdx: 0
+AsicSetTxStream(): NotSupportedFunc for this arch(HIF_MT)!
+AsicSetRxStream(): NotSupportedFunc for this arch(HIF_MT)!
+apidx 1 for WscUUIDInit
+Generate UUID for apidx(1)
+wifi_up_handle rai1.
+device rai1 entered promiscuous mode
+bdg2: port 8(rai1) entered forwarding state
+bdg2: port 8(rai1) entered forwarding state
+/userfs/bin/tcapi set Mesh_radio2gbssinfo_entry0 BackHaul 0
+/userfs/bin/tcapi set Mesh_radio2gbssinfo_entry0 FrontHaul 1
+/userfs/bin/tcapi set Mesh_radio2gbssinfo_entry2 BackHaul 0
+/userfs/bin/tcapi set Mesh_radio2gbssinfo_entry2 FrontHaul 1
+/userfs/bin/tcapi set Mesh_radio2gbssinfo_entry3 BackHaul 0
+/userfs/bin/tcapi set Mesh_radio2gbssinfo_entry3 FrontHaul 1
+/userfs/bin/tcapi set Mesh_radio5glbssinfo_entry0 BackHaul 0
+/userfs/bin/tcapi set Mesh_radio5glbssinfo_entry0 FrontHaul 1
+/userfs/bin/tcapi set Mesh_radio5glbssinfo_entry2 BackHaul 0
+/userfs/bin/tcapi set Mesh_radio5glbssinfo_entry2 FrontHaul 1
+/userfs/bin/tcapi set Mesh_radio5glbssinfo_entry3 BackHaul 0
+/userfs/bin/tcapi set Mesh_radio5glbssinfo_entry3 FrontHaul 1
+/userfs/bin/tcapi set WLan_Entry1 WNMEnable 1
+/userfs/bin/tcapi set WLan_Entry1 MaxStaNum 10
+/userfs/bin/tcapi set WLan_Entry1 AccessPolicy 0
+/userfs/bin/tcapi set WLan_Entry1 IEEE8021X 0
+/userfs/bin/tcapi set WLan_Entry1 WPSConfMode 4
+/userfs/bin/tcapi set WLan_Entry1 SSID JioFiber-BtXA4-BH
+/userfs/bin/tcapi set WLan_Entry1 EnableSSID 1
+/userfs/bin/tcapi set WLan_Entry1 AuthMode WPA2PSK
+/userfs/bin/tcapi set WLan_Entry1 EncrypType AES
+/userfs/bin/tcapi set WLan_Entry1 WPAPSK yavaiceikeerikae
+/userfs/bin/tcapi set WLan_Entry1 HideSSID 1
+/userfs/bin/tcapi set WLan_Entry1 VapInfc ra1
+/userfs/bin/tcapi set Mesh_radio2gbssinfo_entry1 BackHaul 1
+/userfs/bin/tcapi set Mesh_radio2gbssinfo_entry1 FrontHaul 0
+/userfs/bin/tcapi set WLan11ac_Entry1 WNMEnable 1
+/userfs/bin/tcapi set WLan11ac_Entry1 MaxStaNum 10
+/userfs/bin/tcapi set WLan11ac_Entry1 AccessPolicy 0
+/userfs/bin/tcapi set WLan11ac_Entry1 IEEE8021X 0
+/userfs/bin/tcapi set WLan11ac_Entry1 WPSConfMode 4
+/userfs/bin/tcapi set WLan11ac_Entry1 SSID JioFiber-BtXA4-BH
+/userfs/bin/tcapi set WLan11ac_Entry1 EnableSSID 1
+/userfs/bin/tcapi set WLan11ac_Entry1 AuthMode WPA2PSK
+/userfs/bin/tcapi set WLan11ac_Entry1 EncrypType AES
+/userfs/bin/tcapi set WLan11ac_Entry1 WPAPSK yavaiceikeerikae
+/userfs/bin/tcapi set WLan11ac_Entry1 HideSSID 1
+/userfs/bin/tcapi set WLan11ac_Entry1 VapInfc rai1
+/userfs/bin/tcapi set Mesh_radio5glbssinfo_entry1 BackHaul 1
+/userfs/bin/tcapi set Mesh_radio5glbssinfo_entry1 FrontHaul 0
+/userfs/bin/tcapi set Mesh_Common DeviceRole 1
+/userfs/bin/tcapi set Mesh_Common NonMapIface ra2;ra3;rai2;rai3
+/userfs/bin/tcapi set Mesh_SteerCfg LowRSSIAPSteerEdge_RE 25
+/userfs/bin/tcapi set Mesh_SteerCfg force_roam_rssi_th -70
+/userfs/bin/tcapi set Mesh_SteerCfg APsteer_thresh_tolerance 15
+/userfs/bin/tcapi set Mesh_SteerCfg MinRssiIncTh_RE 5
+/userfs/bin/tcapi set Mesh_SteerCfg MinRssiIncTh_Peer 5
+/userfs/bin/tcapi set Mesh_SteerCfg CUOverloadTh_2G 70
+/userfs/bin/tcapi set Mesh_SteerCfg CUOverloadTh_5G_L 80
+/userfs/bin/tcapi set Mesh_SteerCfg CUOverloadTh_5G_H 80
+/userfs/bin/tcapi set Mesh_dat MapEnable 1
+/userfs/bin/tcapi set Mesh_dat MAP_Turnkey 1
+/userfs/bin/tcapi set Mesh_mapcfg br_inf bdg2
+/userfs/bin/tcapi set Mesh_mapcfg bss_config_priority ra1;ra0;rai1;rai0
+/userfs/bin/tcapi set Mesh_mapcfg lan eth0.1,eth0.2,eth0.3,eth0.4
+/userfs/bin/tcapi set Mesh_mapcfg AL-MAC 
+/userfs/bin/tcapi set Mesh_DefSetting DhcpCtl 0
+/userfs/bin/tcapi commit Mesh_dat
+get_itf_hwaddr 1270: ioctl open fail
+WPSActiveStatus = NULL
+WPSOOBActMtCmdGetThermalSensorResult: ActionIdx: 0, uBandIdx: 0
+ive = NULL
+/userfs/bin/tcapi save
+ReCounterActive = NULL
+WPSGenPinCode = NULL
+svchost_get_event_val: get param fail [0] 
+
+Send OAM Update config!
+!ra0       no private ioctls.
+
+ctromfile.cfg
+ra0       no private ioctls.
+
+ra0       no private ioctls.
+
+ra0       no private ioctls.
+
+ra1       no private ioctls.
+
+ra1       no private ioctls.
+
+ra1       no private ioctls.
+
+ra1       no private ioctls.
+
+Starting app daemon... Done
+Starting linkmonitor daemonDone
+ra2       no private ioctls.
+
+ra2       no private ioctls.
+
+ra2       no private ioctls.
+
+ra2       no private ioctls.
+
+Getting firmware version...Done
+ra3       no private ioctls.
+
+ra3       no private ioctls.
+
+Starting captivePortal daemon... ra3       no private ioctls.
+
+ra3       no private ioctls.
+
+write_wlan11ac_config:wifimgr_lib_set_wdskey fail.
+write_wlan11ac_config:wifimgr_lib_set_wdskey fail.
+write_wlan11ac_config:wifimgr_lib_set_wdskey fail.
+write_wlan11ac_config:wifimgr_lib_set_wdskey fail.
+ifconfig: SIOCGIFFLAGS: No such device
+interface wds0 does not exist!
+ifconfig: SIOCGIFFLAGS: No such device
+Done
+interface wds1 does not exist!
+ifconfig: SIOCGIFFLAGS: No such device
+interface wds2 does not exist!
+ifconfig: SIOCGIFFLAGS: No such device
+interface wds3 does not exist!
+rmmod: can't unload 'mt7603eap': unknown symbol in module, or unknown parameter
+Starting CP Accounting daemon... Done
+Unlocking romfile ...
+Writing from /tmp/tc_store_romfile.conf to romfile ... 
+ [ ][e][w]not Error writing tclinux,mtd=romfile.
+
+Unlocking reservearea ...
+Erase one sector from 0x80000 of reservearea ... 
+tcoffset:0x80000,mtdInfo.size:0x240000 size-1:1ffff
+enter real action ----- tcoffset:0x80000
+[e]mtd[writeflash]:device=reservearea tclen=262144 tcoffset=524288 tcfilelen =11259
+TCSUPPORT_USBHOST
+Unlocking reservearea ...
+Writing from /tmp/tc_store_romfile.conf to reservearea ... 
+enter real action -----tclen:0x40000,tcoffset:0x80000
+writeflash: write 0 'st sector,start from 0x80000,0x20000 bytes
+[e][w]enter real action -----tclen:0x20000,tcoffset:0xa0000
+writeflash: write 1 'st sector,start from 0xa0000,0x20000 bytes
+read:count <= 0
+writeflash: total write 0x2bfb bytes
+
+
+==>Error, socket or ioctl error for mulifctl
+
+==>Error, socket or ioctl error for mulifctl
+insmod: can't insert '/lib/modules/usbhost/scsi_mod.ko': invalid module format
+Starting the cron deamon...Done
+insmod: can't insert '/lib/modules/usbhost/scsi_wait_scan.ko': No such file or directory
+method = HW_NAT_TAB_CLEAN
+done
+usage: /usr/script/wan_stop.sh [interface name] [pvc index] [pvc flag]
+Starting NSCAN daemon... Done
+insmod: can't insert '/lib/modules/usbhost/sd_mod.ko': No such device
+insmod: can't insert '/lib/modules/usbhost/nls_base.ko': No such file or directory
+insmod: can't insert '/lib/modules/usbhost/nls_ascii.ko': No such file or directory
+Removing old /mnt/vfs...insmod: can't insert '/lib/modules/usbhost/nls_cp437.ko': No such file or directory
+Done
+Creating /mnt/vfs...insmod: can't insert '/lib/modules/usbhost/nls_cp936.ko': No such file or directory
+Done
+insmod: can't insert '/lib/modules/usbhost/fat.ko': No such file or directory
+insmod: can't insert '/lib/modules/usbhost/vfat.ko': No such file or directory
+ledConf: failed to Open /dev/led device
+ledConf() failed
+insmod: can't insert '/lib/modules/usbhost/usbcore.ko': No such file or directory
+insmod: can't insert '/lib/modules/usbhost/xhci-hcd.ko': No such file or directory
+insmod: can't insert 'lib/modules/usbhost/fuse.ko': No such file or directory
+0===errno:0
+ errmessage:Success
+1===errno:0
+ errmessage:Success
+2==errno:0
+ errmessage:Success
+0===errno:0
+ errmessage:Success
+1===errno:0
+ errmessage:Success
+2==errno:0
+ errmessage:Success
+0===errno:0
+ errmessage:Success
+1===errno:0
+ errmessage:Success
+2==errno:0
+ errmessage:Success
+0===errno:0
+ errmessage:Success
+1===errno:0
+ errmessage:Success
+2==errno:0
+ errmessage:Success
+0===errno:0
+ errmessage:Success
+1===errno:0
+ errmessage:Success
+2==errno:0
+ errmessage:Success
+0===errno:0
+ errmessage:Success
+1===errno:0
+ errmessage:Success
+2==errno:0
+ errmessage:Success
+0===errno:0
+ errmessage:Success
+1===errno:0
+ errmessage:Success
+2==errno:0
+ errmessage:Success
+TCSUPPORT_WLAN_SW_RPS
+0===errno:0
+ errmessage:Success
+1===errno:0
+ errmessage:Success
+2==errno:0
+ errmessage:Success
+0===errno:0
+ errmessage:Success
+1===errno:0
+ errmessage:Success
+2==errno:0
+ errmessage:Success
+0===errno:0
+ errmessage:Success
+1===errno:0
+ errmessage:Success
+2==errno:0
+ errmessage:Success
+0===errno:0
+ errmessage:Success
+1===errno:0
+ errmessage:Success
+2==errno:0
+ errmessage:Success
+0===errno:0
+ errmessage:Success
+1===errno:0
+ errmessage:Success
+2==errno:0
+ errmessage:Success
+7613 sw rps
+mtdblock11 for config
+mount config success!
+rcs end
+Starting udevd...Done
+Creating /mnt/nas directory...Done
+
+
+
+Solution for RIL
+
+RIL login: Removing old /mnt/vfs...Done
+Creating /mnt/vfs...Done
+chmod: /userfs/profile.cfg: Read-only file system
+TCSUPPORT_WLAN
+TCSUPPORT_DUAL_WLAN_MT7613E
+insmod: can't insert '/lib/modules/mt7663_ap.ko': No such file or directory
+TCSUPPORT_WLAN_MT7592
+insmod: can't insert '/lib/modules/mt7603eap.ko': File exists
+TCSUPPORT_MAP_FILTER
+device ra0 is not a slave of br0
+device ra1 is not a slave of br0
+device ra2 is not a slave of br0
+VoIPBasic_Common SIPProtocol is SIP
+device rai0 is not a slave of br0
+device rai1 is not a slave of br0
+device rai2 is not a slave of br0
+TCSUPPORT_WLAN: ifconfig
+device ra0 is already a member of a bridge; can't enslave it to bridge bdg2.
+device ra1 is already a member of a bridge; can't enslave it to bridge bdg2.
+TCSUPPORT_WLAN_WDS
+killall: wscd: no process killed
+device rai0 is already a member of a bridge; can't enslave it to bridge bdg2.
+device rai1 is already a member of a bridge; can't enslave it to bridge bdg2.
+TCSUPPORT_WLAN_WDS
+killall: rtdot1xd: no process killed
+device wds0 is not a slave of bdg2
+[DOT1X] Ralink DOT1X daemon, version = '3.0.0.0' 
+[DOT1X] own radius port not set in driver. Default 0 value set.
+device wds1 is not a slave of bdg2
+killall: rtdot1xd_AC: no process killed
+[DOT1X] Ralink DOT1X daemon, version = '3.0.0.0' 
+[DOT1X] own radius port not set in driver. Default 0 value set.
+[DOT1X] (no.1) Radius port is invalid for rai0
+[DOT1X] (no.1) Radius key is invalid for rai0
+[DOT1X] (no.1) Radius port is invalid for rai1
+[DOT1X] (no.1) Radius key is invalid for rai1
+[DOT1X] (no.1) Radius port is invalid for rai2
+[DOT1X] (no.1) Radius key is invalid for rai2
+[DOT1X] (no.1) Radius port is invalid for rai3
+[DOT1X] (no.1) Radius key is invalid for rai3
+device wds2 is not a slave of bdg2
+device wds3 is not a slave of bdg2
+rmmod: can't unload 'mt7603eap': Resource temporarily unavailable
+insmod: can't insert '/lib/modules/mt7603eap.ko': File exists
+device ra0 is already a member of a bridge; can't enslave it to bridge bdg2.
+device ra1 is already a member of a bridge; can't enslave it to bridge bdg2.
+svchost_get_event_val: get param fail [0] 
+Chain 'vpn_lan_entry0' doesn't exist.
+Chain 'vpn_lan_entry0' doesn't exist.
+iptables: No chain/target/match by that name.
+[DOT1X] Ralink DOT1X daemon, version = '3.0.0.0' 
+[DOT1X] own radius port not set in driver. Default 0 value set.
+WPSActiveStatus = NULL
+WPSOOBActive = NULL
+ReCounterActive = NULL
+WPSGenPinCode = NULL
+write_wlan11ac_config:write CountryRegion to data file fail.
+debug 4.
+/bin/sh: can't create /proc/tc3162/loop_detect: nonexistent directory
+/bin/sh: can't create /proc/tc3162/loop_detect: nonexistent directory
+write_wlan11ac_config:wifimgr_lib_set_wdskey fail.
+write_wlan11ac_config:wifimgr_lib_set_wdskey fail.
+write_wlan11ac_config:wifimgr_lib_set_wdskey fail.
+write_wlan11ac_config:wifimgr_lib_set_wdskey fail.
+/bin/sh: can't create /proc/tc3162/loop_detect: nonexistent directory
+/bin/sh: can't create /proc/tc3162/loop_detect: nonexistent directory
+/bin/sh: can't create /proc/tc3162/loop_detect: nonexistent directory
+device wdsi0 is not a slave of bdg2
+device wdsi1 is not a slave of bdg2
+device wdsi2 is not a slave of bdg2
+device wdsi3 is not a slave of bdg2
+Another app is currently holding the xtables lock. Perhaps you want to use the -w option?
+Another app is currently holding the xtables lock. Perhaps you want to use the -w option?
+Another app is currently holding the xtables lock. Perhaps you want to use the -w option?
+Another app is currently holding the xtables lock. Perhaps you want to use the -w option?
+Another app is currently holding the xtables lock. Perhaps you want to use the -w option?
+iptables v1.4.21: Couldn't load target `WLan_AccessRule15':No such file or directory
+
+Try `iptables -h' or 'iptables --help' for more information.
+device rai2 is not a slave of br0
+device rai3 is not a slave of br0
+killall: wscd: no process killed
+killall: rtdot1xd_AC: no process killed
+[DOT1X] Ralink DOT1X daemon, version = '3.0.0.0' 
+[DOT1X] own radius port not set in driver. Default 0 value set.
+[DOT1X] (no.1) Radius port is invalid for rai0
+[DOT1X] (no.1) Radius key is invalid for rai0
+[DOT1X] (no.1) Radius port is invalid for rai1
+[DOT1X] (no.1) Radius key is invalid for rai1
+[DOT1X] (no.1) Radius port is invalid for rai2
+[DOT1X] (no.1) Radius key is invalid for rai2
+[DOT1X] (no.1) Radius port is invalid for rai3
+[DOT1X] (no.1) Radius key is invalid for rai3
+svchost_get_event_val: get param fail [0] 
+/bin/sh: /usr/script/joyme_load.sh: not found
+Starting QOS daemon... Done
+killall: mapd: no process killed
+killall: p1905_managerd: no process killed
+killall: wapp: no process killed
+device apcli0 is not a slave of bdg2
+device apclii0 is not a slave of bdg2
+get_if_info for bdg2
+interface index is 21
+get_if_info OK
+Clean up temporary socket
+bind_arp: ifindex=21
+Binding to ifindex 21
+bind_arp: ifindex=35
+Binding to ifindex 35
+MAC: 0x7fa1658c, len = 6
+0x0000 : a8 da 0c 37 4e 07 
+bind_arp: ifindex=36
+Binding to ifindex 36
+bind_arp: ifindex=2
+Binding to ifindex 2
+bind_arp: ifindex=27
+Binding to ifindex 27
+	 opClass = 81, chn_num = 11
+	 opClass = 83, chn_num = 7
+	 opClass = 84, chn_num = 7
+	 opClass = 81, chn_num = 11
+	 opClass = 83, chn_num = 7
+	 opClass = 84, chn_num = 7
+	 opClass = 115, chn_num = 4
+	 opClass = 124, chn_num = 4
+	 opClass = 125, chn_num = 5
+	 opClass = 116, chn_num = 2
+	 opClass = 126, chn_num = 2
+	 opClass = 117, chn_num = 2
+	 opClass = 127, chn_num = 2
+	 opClass = 128, chn_num = 6
+	 opClass = 129, chn_num = 2
+	 opClass = 130, chn_num = 6
+	 opClass = 115, chn_num = 4
+	 opClass = 124, chn_num = 4
+	 opClass = 125, chn_num = 5
+	 opClass = 116, chn_num = 2
+	 opClass = 126, chn_num = 2
+	 opClass = 117, chn_num = 2
+	 opClass = 127, chn_num = 2
+	 opClass = 128, chn_num = 6
+	 opClass = 129, chn_num = 2
+	 opClass = 130, chn_num = 6
+killall: p1905_managerd: no process killed
+[WAPP]map_send_wirelss_inf_info
+send info ra0, role: wiap, dev type = 1
+MAC Address = 
+send info ra1, role: wiap, dev type = 1
+MAC Address = 
+send info rai0, role: wiap, dev type = 1
+MAC Address = 
+send info rai1, role: wiap, dev type = 1
+MAC Address = 
+[1;32m  inf_count = 4 [0m
+[1;32m 0 name ra0 ch 1, phymode [N] role [wiap][0m
+[1;32m 1 name ra1 ch 1, phymode [N] role [wiap][0m
+[1;32m 2 name rai0 ch 36, phymode [AC] role [wiap][0m
+[1;32m 3 name rai1 ch 36, phymode [AC] role [wiap][0m
+killall: mapd: no process killed
+daemon mapd attached \x00/tmp/wapp_ctrl
+[1;32mctrler_found 
+[0m[WAPP]map_send_wirelss_inf_info
+send info ra0, role: wiap, dev type = 1
+MAC Address = 
+send info ra1, role: wiap, dev type = 1
+MAC Address = 
+send info rai0, role: wiap, dev type = 1
+MAC Address = 
+send info rai1, role: wiap, dev type = 1
+MAC Address = 
+map_build_ap_vht_cap: - Unknow VHT Tx Spatial Stream!! 
+map_build_ap_vht_cap: - Unknow VHT Rx Spatial Stream!! 
+map_build_ap_vht_cap: - Unknow VHT Tx Spatial Stream!! 
+map_build_ap_vht_cap: - Unknow VHT Rx Spatial Stream!! 
+Profile Count to host = 0
+Interface doesn't accept private ioctl...
+set (8BE2): Invalid argument
+Interface doesn't accept private ioctl...
+set (8BE2): Invalid argument
+Interface doesn't accept private ioctl...
+set (8BE2): Invalid argument
+Interface doesn't accept private ioctl...
+set (8BE2): Invalid argument
+0 ssid=Jio-2G, autmode=0x0020, encryptype=0x0008, key= bh_bss=0, fh_bss=1
+send BH config to ra0
+wapd sends WPAPSK = 
+send BH config to ra1
+wapd sends WPAPSK = 
+send BH config to rai0
+wapd sends WPAPSK = 
+send BH config to rai1
+wapd sends WPAPSK = 
+1 ssid=JioFiber-BtXA4-BH, autmode=0x0020, encryptype=0x0008, key=yavaiceikeerikae bh_bss=1, fh_bss=0
+send BH config to ra0
+wapd sends WPAPSK = yavaiceikeerikae
+send BH config to ra1
+wapd sends WPAPSK = yavaiceikeerikae
+send BH config to rai0
+wapd sends WPAPSK = yavaiceikeerikae
+send BH config to rai1
+wapd sends WPAPSK = yavaiceikeerikae
+1-iwpriv ra0 set AuthMode=WPA2PSK;
+/bin/sh: wifi_config_save: not found
+2-iwpriv ra0 set EncrypType=AES;
+/bin/sh: wifi_config_save: not found
+/bin/sh: wifi_config_save: not found
+/bin/sh: wifi_config_save: not found
+/bin/sh: wifi_config_save: not found
+1-iwpriv ra1 set AuthMode=WPA2PSK;
+/bin/sh: wifi_config_save: not found
+2-iwpriv ra1 set EncrypType=AES;
+/bin/sh: wifi_config_save: not found
+/bin/sh: wifi_config_save: not found
+/bin/sh: wifi_config_save: not found
+/bin/sh: wifi_config_save: not found
+0 ssid=JioFiber-5G, autmode=0x0020, encryptype=0x0008, key= bh_bss=0, fh_bss=1
+send BH config to ra0
+wapd sends WPAPSK = 
+send BH config to ra1
+wapd sends WPAPSK = 
+send BH config to rai0
+wapd sends WPAPSK = 
+send BH config to rai1
+wapd sends WPAPSK = 
+1 ssid=JioFiber-BtXA4-BH, autmode=0x0020, encryptype=0x0008, key=yavaiceikeerikae bh_bss=1, fh_bss=0
+send BH config to ra0
+wapd sends WPAPSK = yavaiceikeerikae
+send BH config to ra1
+wapd sends WPAPSK = yavaiceikeerikae
+send BH config to rai0
+wapd sends WPAPSK = yavaiceikeerikae
+send BH config to rai1
+wapd sends WPAPSK = yavaiceikeerikae
+1-iwpriv rai0 set AuthMode=WPA2PSK;
+/bin/sh: wifi_config_save: not found
+2-iwpriv rai0 set EncrypType=AES;
+/bin/sh: wifi_config_save: not found
+/bin/sh: wifi_config_save: not found
+/bin/sh: wifi_config_save: not found
+/bin/sh: wifi_config_save: not found
+1-iwpriv rai1 set AuthMode=WPA2PSK;
+/bin/sh: wifi_config_save: not found
+2-iwpriv rai1 set EncrypType=AES;
+/bin/sh: wifi_config_save: not found
+/bin/sh: wifi_config_save: not found
+/bin/sh: wifi_config_save: not found
+/bin/sh: wifi_config_save: not found
+map_build_ap_vht_cap: - Unknow VHT Tx Spatial Stream!! 
+map_build_ap_vht_cap: - Unknow VHT Rx Spatial Stream!! 
+Thirdparty configuration exists
+Appnames files present
+Starting wl_notifier...
+Done.
+Executing voip_load.sh... 
+Completed voip_load.sh... 
+Starting VOIP daemon... Done
+Done
+0===errno:0
+ errmessage:Success
+1===errno:0
+ errmessage:Success
+2==errno:0
+ errmessage:Success
+0===errno:0
+ errmessage:Success
+1===errno:0
+ errmessage:Success
+2==errno:0
+ errmessage:Success
+MTK DSP support
+voip_loader start
+START CHECK ZARLIN ZSI
+[SLIC] le9641
+Loading le9641,slic num:1
+Loading common
+Loading DMS Configuraion ..
+Done
+Starting DMS Process
+Starting RAS Process
+count =4 1=/userfs/bin/mapd_cli 2=/tmp/mapd_ctrl
+Succesfully opened connection to mapd
+voip loader end
+pid 5772's current affinity mask: 1
+pid 5772's new affinity mask: 8
+pid 5802's current affinity mask: 1
+pid 5802's new affinity mask: 8
+
+
+
+Solution for RIL
+
+reliance.reliance login: root
+Password: 
+Login incorrect
+reliance.reliance login: admin
+Login incorrect
+reliance.reliance login: 

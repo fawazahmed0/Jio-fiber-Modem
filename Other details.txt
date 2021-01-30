@@ -1,0 +1,38 @@
+Processor
+Econet en751221 (MediaTek)
+
+
+
+Serial User Password:
+user root
+pass: 
+
+Someone Have to get the password by either:
+Performing dictionary/Brute attack in serial console to get the password
+or
+Get JIO fiber router firmware, and try to get the root password inside it
+
+Benefits of Serial Access(if you crack the password):
+Many benefits, including bridging mode support, disabling Remote access by ISP(TR-069) etc, which will start working when you login as root user (I got to know from some chinese forum about it , https://wzq.io/2018/12/11/%e5%8c%97%e4%ba%ac%e8%81%94%e9%80%9a%e5%85%89%e7%8c%abG-140W-UD%e8%b6%85%e7%ba%a7%e7%ae%a1%e7%90%86%e5%91%98%e7%a0%b4%e8%a7%a3%e5%8f%8a%e6%94%b9%e6%a1%a5%e6%8e%a5/
+https://www.right.com.cn/forum/thread-374907-1-1.html
+https://89lg.cn/16.html
+ )
+
+
+Serial Speed 115200 I used
+
+
+Similar to TP-Link VR1200v/SyRotech SY-GPON-1110-WDONT
+Bell G-140W-UD (newer version)
+Unicom G-140W-UD 
+
+Passwords tried:
+TeleCom_1234
+hg2x0
+aDm8H%MdA
+nE7jA%5m
+stdONU101
+
+should try:
+LA(ImvZx%8
+yavaiceikeerikae

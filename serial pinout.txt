@@ -1,0 +1,4 @@
+serial console pinout:
+GND as J4(diode symbol), TX to RX of usb, RX to TX of usb, v3.3+
+
+refer picture with mappings
